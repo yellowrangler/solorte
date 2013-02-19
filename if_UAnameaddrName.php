@@ -1,0 +1,339 @@
+<?php
+//----------------------------------------------------------------------------------------------------------
+// Set special globals.
+//----------------------------------------------------------------------------------------------------------
+$module = 'if_UAnameaddrName.php';
+
+require ('hysInit.php');
+
+require ('hysDBinit.php');
+
+require ('hysDateEdits.php');
+
+require ('hysStatusMsg.php');
+
+//----------------------------------------------------------------------------------------------------------
+// create the SQL statement to get our clients name. 
+//----------------------------------------------------------------------------------------------------------
+$sql = "SELECT * from ClientTBL 
+		inner join FullNameTBL on ClientTBL.FullNameID = FullNameTBL.ID
+		where ClientTBL.MEDPAL = '$Medpal'";
+			
+if (!$sql_result = mysql_query($sql, $conn))
+{
+	$sqlerr = mysql_error();
+	$errmsg = "$sqlerr - Error doing mysql_query join for ClientTBL and FullNameTBL (195) - '$Medpal'";
+	$shortmsg = "System DB error.  If this persists, Please call Customer Support.";
+	$location = "";
+	$severity = 1;
+	LogErr($shortmsg, $errmsg, $location, $module, $severity);
+}
+
+//----------------------------------------------------------------------------------------------------------	
+// Now lets first see if there is anything to run through.  If more then 1 we have an error
+//----------------------------------------------------------------------------------------------------------
+$countRows = mysql_num_rows($sql_result);
+if ($countRows != 1)
+{
+	$errmsg = " Error more or less then 1 rows returned in select for ClientTBL and FullNameTBL. count = '$countRows'  - '$Medpal'";
+	$shortmsg = "System DB error.  If this persists, Please call Customer Support.";
+	$location = "";
+	$severity = 1;
+	LogErr($shortmsg, $errmsg, $location, $module, $severity);
+}	
+
+//----------------------------------------------------------------------------------------------------------
+// now lets fetch for our display
+//----------------------------------------------------------------------------------------------------------
+$result_array = mysql_fetch_assoc($sql_result);
+	
+//----------------------------------------------------------------------------------------------------------
+// Format the date for display
+//----------------------------------------------------------------------------------------------------------
+$tmpDate = CovertMySQLDate($result_array["DOB"], 1, 9);
+
+$DisplayMonth = $tmpDate[1];
+$DisplayDay = $tmpDate[2];
+$DisplayYear = $tmpDate[0];	
+
+?>
+<html>
+
+<head>
+<title>HealthYourSelf Clinet Name Info</title>
+
+<link rel="stylesheet" type="text/css" href="css/hysstyle.css" />
+
+<style type="text/css"> 
+
+.detailBody {
+		position: absolute;
+		left:20px;
+		top:45px; 
+		width:650px;
+		height:575px;
+		background-color: white;
+		border:1px solid black;
+		}
+		
+.outerBorderblackfillSiennaSmTxt {
+		font: 400 13px Arial, Geneva;
+		line-height: 14px; 
+		border-top:0px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		border-bottom:1px solid black;
+		background: #ccccff;
+		}	
+
+.outerBorderblackSmTxt {
+		font: 400 13px Arial, Geneva;
+		line-height: 14px; 
+		border-top:0px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		border-bottom:1px solid black;
+		background: #ffffff;
+		}	
+
+.outerBorderMessageTitleBlue {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		letter-spacing: 8px;
+		border-top:1px solid #052faf;
+		border-left:1px solid #052faf;
+		border-right:1px solid #052faf;
+		border-bottom:1px solid #052faf;
+		background: #052faf;
+		}				
+		
+.fillSiennaSmTxt   { 
+		font: 400 13px Arial, Geneva;
+		background: #e8e188;
+		}			
+						
+</style>
+
+<script language="JavaScript" type="text/javascript" src="hysfunc.js"> </script>
+<script type="text/javascript" language="JavaScript">
+function startUp() 
+{	
+	<? print $JavaScriptLogMsg; ?> 
+		
+	<? print $JavaScriptMsg; ?>
+}
+<!--
+// Copyright information must stay intact
+// FormCheck v1.10
+// Copyright NavSurf.com 2002, all rights reserved
+// Creative Solutions for JavaScript navigation menus, scrollers and web widgets
+// Affordable Services in JavaScript consulting, customization and trouble-shooting
+// Visit NavSurf.com at http://navsurf.com
+
+function formCheck(formobj){
+	// name of mandatory fields
+	var fieldRequired = Array("firstname", "lastname", "month", "day", "year");
+	// field description to appear in the dialog box
+	var fieldDescription = Array("First Name", "Last Name", "Month", "Day", "Year");
+	// field description to appear in the dialog box
+	var fieldEdit = Array("None", "None", "MM", "DD", "YYYY");
+												
+	// dialog message
+	var alertMsg = "Please complete the following fields:\n";
+	
+	var l_Msg = alertMsg.length;
+	
+	for (var i = 0; i < fieldRequired.length; i++)
+	{
+		var obj = formobj.elements[fieldRequired[i]];
+		if (obj)
+		{
+			if (obj.type == null)
+			{
+				var blnchecked = false;
+				for (var j = 0; j < obj.length; j++)
+				{
+					if (obj[j].checked){
+						blnchecked = true;
+					}
+				}
+				if (!blnchecked)
+				{
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				continue;
+			}
+
+			switch(obj.type)
+			{
+				case "select-one":
+					if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == "")
+					{
+						alertMsg += " - " + fieldDescription[i] + "\n";
+					}
+					break;
+				case "select-multiple":
+					if (obj.selectedIndex == -1)
+					{
+						alertMsg += " - " + fieldDescription[i] + "\n";
+					}
+					break;
+				case "text":
+				case "textarea":
+					if (obj.value == "" || obj.value == null)
+					{
+						alertMsg += " - " + fieldDescription[i] + "\n";
+					}
+					
+					if (fieldEdit[i] != "None")
+					{	
+						var x = fieldCheck(obj.value, fieldEdit[i]);
+						if (!x)
+						{
+							alertMsg += " - Invalid " + fieldDescription[i] + "\n";
+						}
+					}	
+					break;
+				default:
+			}
+		}
+	}
+
+	if (alertMsg.length == l_Msg)
+	{
+		return true;
+	}
+	else
+	{
+		alert(alertMsg);
+		return false;
+	}
+}
+
+function fieldCheck(strValue, strEdit)
+{
+	var res = true;
+	var i;
+	
+	switch(strEdit)
+	{
+			case "MM":
+				i = parseFloat(strValue);
+				if (i <= 0 || i > 12)
+				{
+					res = false;
+				}
+				break;
+			case "DD":
+				i = parseFloat(strValue);
+				if (i <= 0 || i > 31)
+				{
+					res = false;
+				}
+				break;
+			case "YYYY":
+					i = parseFloat(strValue);
+				if (i < 1850)
+				{
+					res = false;
+				}
+				break;
+			case "HH":
+				i = parseFloat(strValue);
+				if (i < 0 || i > 12)
+				{
+					res = false;
+				}
+				break;
+			case "MI":
+				i = parseFloat(strValue);
+				if (i < 0 || i > 60)
+				{
+					res = false;
+				}
+				break;
+			default:
+	}		
+	return res;
+}
+// -->
+</script>
+
+</head>
+
+<body <? print $BodySelectColor ?> onload="startUp()">
+
+<div class="detailBody">
+<form  action="UAnameaddrName.php" method=post onsubmit="return formCheck(this);">
+<table width="100%" class="outerBorderMessageTitleBlue">
+	<tr>
+		 <td height=20 align="center">Client Information</td>
+	</tr>	
+</table>
+<table width="100%" class="tblDetailsmTextOff">
+	<tr>
+		<td align=right height=40>Prefix:</td>
+		<td align=left><input size=3 maxlength=5 type="text" name="prefix" value="<? print  $result_array[Prefix]; ?>"></td>
+	</tr>
+	<tr>
+		<td align=right height=40>First Name:</td>
+		<td align=left><input size=15 maxlength=45 type="text" name="firstname" value="<? print  $result_array[FirstName]; ?>"> </td>
+	</tr>
+	<tr>
+		<td align=right height=40>Middle Initial:</td>
+		<td align=left><input size=1 maxlength=1 type="text" name="mi" value="<? print  $result_array[MI]; ?>"> </td>
+	</tr>
+	<tr>	
+		<td align=right height=40>Last Name:</td>
+		<td align=left><input size=15 maxlength=45 type="text" name="lastname" value="<? print  $result_array[LastName]; ?>"> </td>
+	</tr>
+	<tr>	
+		<td align=right height=40>Suffix:</td>
+		<td align=left><input size=3 maxlength=5 type="text" name="suffix" value="<? print  $result_array[Suffix]; ?>"></td>
+	</tr>
+</table>	
+
+<br>
+<hr width="80%" align=center>
+<br>
+<table width="100%" class="tblDetailsmTextOff">
+	<tr>
+		<td align=right height=40>Date of Birth:</td>
+		<td align=left>
+			<input size=2 type="text" name="month" value="<? print $DisplayMonth; ?>">/
+			<input size=2 type="text" name="day" value="<? print $DisplayDay; ?>">/
+			<input size=4 type="text" name="year" value="<? print $DisplayYear; ?>"> (Format MM/DD/YYYY)
+		</td>
+	</tr>
+	<tr>
+		<td align=right height=40>Email Address:</td>
+		<td align=left><input size=50 maxlength=255 type="text" name="email" value="<? print  $result_array[eMailAddr]; ?>"></td>
+	</tr>
+	<tr>
+		<td align=right height=40>Mobile Phone Number:</td>
+		<td align=left><input size=15 maxlength=15 type="text" name="mphone" value="<? print  $result_array[MobilePhone]; ?>"> </td>
+	</tr>
+	<tr>
+		<td align=right height=40>Pager Number:</td>
+		<td align=left><input size=15 maxlength=15 type="text" name="pagerid" value="<? print  $result_array[PagerID]; ?>"> </td>
+	</tr>
+	<tr>	
+		<td align=right height=40>Pager Telephone Number:</td>
+		<td align=left><input size=15 maxlength=15 type="text" name="pagertelenbr" value="<? print  $result_array[PagerTeleNbr]; ?>"> </td>
+	</tr>
+</table>
+<input type="hidden" name="fullnameid" value="<? print $result_array[FullNameID]; ?>">	
+<br><center>
+<table>
+	<tr>
+		<td align=center><input type=submit size=150 NAME="SUBMIT" VALUE="Submit"></td>
+		<td>&nbsp;</td>
+		<td align=center><input type=reset size=150 NAME="RESET" VALUE="Reset"></td>
+	</tr>
+</table>	
+</center>	
+</form>
+</div>
+</body>
+</html>

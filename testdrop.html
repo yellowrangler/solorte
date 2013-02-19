@@ -1,0 +1,105 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<HEAD>
+<TITLE>JavaScriptDrop Down List Test</TITLE>
+</HEAD>
+<script language="JavaScript" type="text/javascript">
+
+function insertNewOption()
+{
+	indexCar = document.selectCar.cars.value
+	
+	switch (indexCar)
+	{
+		case 'v':
+		
+			
+			document.selectCar.Morecars.options[0].text="Cross Country"
+			document.selectCar.Morecars.options[0].value="xc"
+			
+			document.selectCar.Morecars.options[1].text="Up Country"
+			document.selectCar.Morecars.options[1].value="uc"
+			
+			document.selectCar.Morecars.options[2].text="Lost Country"
+			document.selectCar.Morecars.options[2].value="lc"
+			
+			document.selectCar.Morecars.options[3].text="Another Country"
+			document.selectCar.Morecars.options[3].value="ac"
+			
+				 document.selectCar.Morecars.length = 4
+			break
+			
+		case 's':
+			document.selectCar.Morecars.options[0].text="My Saab"
+			document.selectCar.Morecars.options[0].value="ms"
+			
+			document.selectCar.Morecars.options[1].text="Up Saab"
+			document.selectCar.Morecars.options[1].value="us"
+			
+			document.selectCar.Morecars.options[2].text="Lost Saab"
+			document.selectCar.Morecars.options[2].value="ls"
+			
+			document.selectCar.Morecars.options[3].text="Another Saab"
+			document.selectCar.Morecars.options[3].value="as"
+			break	
+			
+		case 'f':
+			document.selectCar.Morecars.options[0].text="Cross Fiat"
+			document.selectCar.Morecars.options[0].value="xc"
+			
+			document.selectCar.Morecars.options[1].text="Up Fiat"
+			document.selectCar.Morecars.options[1].value="uc"
+			
+			document.selectCar.Morecars.options[2].text="Lost Fiat"
+			document.selectCar.Morecars.options[2].value="lc"
+			
+			document.selectCar.Morecars.options[3].text="Another Fiat"
+			document.selectCar.Morecars.options[3].value="af"
+			break
+			
+		case 'a':
+			document.selectCar.Morecars.options[0].text="Audi Country"
+			document.selectCar.Morecars.options[0].value="xc"
+			
+			document.selectCar.Morecars.options[1].text="Up Audi"
+			document.selectCar.Morecars.options[1].value="uc"
+			break	
+			
+		case 'x':
+			document.selectCar.Morecars.options[0].text=""
+			document.selectCar.Morecars.options[0].value=""
+			
+			document.selectCar.Morecars.options[1].text=""
+			document.selectCar.Morecars.options[1].value=""
+			
+			document.selectCar.Morecars.options[2].text=""
+			document.selectCar.Morecars.options[2].value=""
+			
+			document.selectCar.Morecars.options[3].text=""
+			document.selectCar.Morecars.options[3].value=""
+			break		
+	} // end of switch
+	
+} // end of function
+
+</script>
+
+<BODY>
+<form name="selectCar">
+
+<select size=1 name="cars" onchange="insertNewOption();">
+<Option value="x">No Select
+<option value="v">Volvo
+<option value="s">Saab
+<option value="f">Fiat
+<option value="a">Audi
+</select>
+
+<select  name="Morecars">
+<option value="">
+</select>
+</form>
+
+
+</BODY>
+</HTML>

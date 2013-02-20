@@ -56,7 +56,7 @@ if ($countRows > 0)
 		$DisplayBlock .= "\t<tr>\n";
 		
 		$DisplayBlock .= "\t\t<td width=\"10%\" height=20 align=right><input size=2 maxlength=2 type=\"text\" name=\"profcronorder".$i."\" value=\"".$result_array[OrderID]."\">: </td>\n";
-		$DisplayBlock .= "\t\t<td align=left><input size=70 maxlength=255 type=\"text\" name=\"profcronic".$i."\" value=\"". $result_array[Condition]."\"></td>\n";
+		$DisplayBlock .= "\t\t<td align=left><input size=70 maxlength=255 type=\"text\" name=\"profcronic".$i."\" value=\"". $result_array[Conditions]."\"></td>\n";
 		
 		$DisplayBlock .= "\t</tr>\n";
 		

@@ -13,7 +13,7 @@ require ('hysDateEdits.php');
 // create the SQL statement to get our calendar events for prescription appointments only
 $sql = "SELECT ClientPrescriptionTBL.ID as CP_ID, MEDPAL, PrescrNbr, CalendarID, PharmacyID, Medication, 
 				PharmacyTBL.Name as PharmacyName,
-				Condition, ProviderID, UnitSZ, Quantity, Dosage, Directions, StartDate, StartTime, 
+				Conditions, ProviderID, UnitSZ, Quantity, Dosage, Directions, StartDate, StartTime, 
 				EndDate, EndTime, CalendarTBL.ID as Cal_ID, FirstName, LastName, Suffix
 				from ClientPrescriptionTBL
 				inner join CalendarTBL on ClientPrescriptionTBL.CalendarID = CalendarTBL.ID

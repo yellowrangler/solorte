@@ -113,7 +113,7 @@ for ($i = 1; $i < 13; $i++)
 			//---------------------------------------------------------------------------------------
 			// There is something so lets Update it 
 			//---------------------------------------------------------------------------------------
-			$sql = "UPDATE ClientCronicConditionTBL set OrderID = '$_POST[$PostCronOrderID]', Condition ='$_POST[$PostCronic]'
+			$sql = "UPDATE ClientCronicConditionsTBL set OrderID = '$_POST[$PostCronOrderID]', Conditions ='$_POST[$PostCronic]'
 					where (ClientCronicConditionTBL.MEDPAL = '$Medpal' and ClientCronicConditionTBL.OrderID = '$_POST[$PostCronOrderID]')";
 									
 			if (!$sql_result = mysql_query($sql, $conn))
@@ -132,7 +132,7 @@ for ($i = 1; $i < 13; $i++)
 			// There is nothing so lets Add it (Insert)
 			//---------------------------------------------------------------------------------------
 			$sql = "INSERT INTO ClientCronicConditionTBL 
-					(MEDPAL, OrderID, Condition) 
+					(MEDPAL, OrderID, Conditions) 
 					VALUES ('$Medpal', '$_POST[$PostCronOrderID]', '$_POST[$PostCronic]')";
 
 			if (!$sql_result = mysql_query($sql, $conn))

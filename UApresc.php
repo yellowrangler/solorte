@@ -78,7 +78,7 @@ switch ($_POST[Action])
 		// Second create clientprescription entry.  We only add what is given.  The rest will default.
 		//--------------------------------------------------------------------------------------------------
 		$sql = "INSERT INTO ClientPrescriptionTBL 
-					(MEDPAL, CalendarID, ProviderID, Condition, PharmacyID, PrescrNbr, Medication, UnitSz, Quantity, Dosage, Directions) 
+					(MEDPAL, CalendarID, ProviderID, Conditions, PharmacyID, PrescrNbr, Medication, UnitSz, Quantity, Dosage, Directions) 
 					VALUES ('$Medpal', '$NewCalendarID', '$_POST[prescprovider]', '$_POST[prescconditionc]',
 							'$_POST[prescpharmacy]', 	'$_POST[prescnbr]', 	'$_POST[prescmedication]', 
 							'$_POST[prescunitsz]', 	'$_POST[prescqty]', 	'$_POST[prescdosage]', 
@@ -209,7 +209,7 @@ switch ($_POST[Action])
 		// now lets update ClientPrescriptionTBL
 		//--------------------------------------------------------------------------------------------------
 		$sql = "UPDATE ClientPrescriptionTBL
-					set ProviderID =  '$_POST[prescprovider]', Condition = '$_POST[prescconditionc]', PharmacyID = '$_POST[prescpharmacy]', 
+					set ProviderID =  '$_POST[prescprovider]', Conditions = '$_POST[prescconditionc]', PharmacyID = '$_POST[prescpharmacy]', 
 						PrescrNbr = '$_POST[prescnbr]', Medication = '$_POST[prescmedication]', UnitSz = '$_POST[prescunitsz]', 
 						Quantity = '$_POST[prescqty]',  Dosage = '$_POST[prescdosage]', Directions = '$_POST[prescdirections]'
 						where ClientPrescriptionTBL.ID =' $_POST[prescid]'";

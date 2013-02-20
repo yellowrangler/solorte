@@ -66,7 +66,7 @@ if ( isset($_GET[prescid]) and ($_GET[prescid] != "") )
 	// from the prescription table
 	$PrescrID = $result_array["PrescrNbr"];
 	$Medication = $result_array["Medication"];
-	$Condition = $result_array["Condition"];
+	$Condition = $result_array["Conditions"];
 	$MedSize = $result_array["UnitSz"];
 	$MedQuantity = $result_array["Quantity"];
 	$MedDosage = $result_array["Dosage"];

@@ -282,7 +282,7 @@ function fieldCheck(strValue, strEdit)
 <table width=175>
 	<tr>
 		<td  valign=center align=center>
-			<?	if ($result_array[URL] != "")
+			<?php	if ($result_array[URL] != "")
 				{
 					print "<img border=1 src=".$result_array[URL]." width=175>";
 				}

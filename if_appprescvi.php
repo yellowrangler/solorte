@@ -477,7 +477,7 @@ $DisplayCalendarBlock3 = "";
 .innerSelectframe {
 		position: absolute;
 		left:10px;
-		top:45px; 
+		top:40px; 
 		width:660px;
 		height:100px;
 		background-color: white;

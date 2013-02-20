@@ -315,7 +315,7 @@ else
 	while ($result_array = mysql_fetch_assoc($sql_result))
 	{
 		// lets build display block for allergies
-		$DisplayBlock .= "\t<tr>\t\t<td width=\"2%\" valign=top align=right>".$i.":</td>\n\t\t<td align=left><b>".$result_array[Condition]."</b></td>\n\t</tr>\n";
+		$DisplayBlock .= "\t<tr>\t\t<td width=\"2%\" valign=top align=right>".$i.":</td>\n\t\t<td align=left><b>".$result_array[Conditions]."</b></td>\n\t</tr>\n";
 		
 		$i++;
 	}	

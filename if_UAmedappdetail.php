@@ -234,9 +234,9 @@ if ( isset($_GET[appid]) and ($_GET[appid] != "") )
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -380,7 +380,7 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div name="detailArea" class="detailArea">
 <form  action="UAappt.php" method=post  onsubmit="return formCheck(this);">
@@ -396,18 +396,18 @@ function fieldCheck(strValue, strEdit)
 	<tr>
 		<td align=right height=40>Date:</td>
 		<td align=left colspan=3>
-			<input size=2 type="text" name="appmonth" value="<? print $DisplayMonth; ?>">/
-			<input size=2 type="text" name="appday" value="<? print $DisplayDay; ?>">/
-			<input size=4 type="text" name="appyear" value="<? print $DisplayYear; ?>"> (Format MM/DD/YYYY)
+			<input size=2 type="text" name="appmonth" value="<?php print $DisplayMonth; ?>">/
+			<input size=2 type="text" name="appday" value="<?php print $DisplayDay; ?>">/
+			<input size=4 type="text" name="appyear" value="<?php print $DisplayYear; ?>"> (Format MM/DD/YYYY)
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=40>Time:</td>
 		<td align=left colspan=3>
-			<input size=2 type="text" name="apphour" value="<? print $DisplayHour; ?>">:
-			<input size=2 type="text" name="appmin" value="<? print $DisplayMinute; ?>">&nbsp;  
+			<input size=2 type="text" name="apphour" value="<?php print $DisplayHour; ?>">:
+			<input size=2 type="text" name="appmin" value="<?php print $DisplayMinute; ?>">&nbsp;  
 			<SELECT name="appampm"> 
-				<option value="<? print $DisplaySelectedAMPM; ?>"><? print $DisplaySelectedAMPM; ?>
+				<option value="<?php print $DisplaySelectedAMPM; ?>"><?php print $DisplaySelectedAMPM; ?>
 				<OPTION value="AM">AM 
 				<OPTION value="PM">PM
 			</SELECT> (Format is HH:MM AM or PM)
@@ -417,15 +417,15 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=40>Provider:</td>
 		<td align=left>
 			<select name="approvider"> 
-				<option class="smallTxtGry" value="<? print $DisplayProviderID; ?>"><? print $DisplayProvider; ?> 
-				<? print $DisplayProviderList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayProviderID; ?>"><?php print $DisplayProvider; ?> 
+				<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 		<td align=right height=40>Location:</td>
 		<td align=left colspan=2>
 			<select name="applocation"> 
-				<option class="smallTxtGry" value="<? print $DisplayHostID; ?>"><? print $DisplayHost; ?> 
-				<? print $DisplayHostList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayHostID; ?>"><?php print $DisplayHost; ?> 
+				<?php print $DisplayHostList; ?>
 			</select>
 		</td>
 	</tr>
@@ -433,14 +433,14 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=40>Type:</td>
 		<td align=left colspan=2>
 			<select name="eventtype"> 
-				<option class="smallTxtGry" value="<? print $DisplayEventTypeID; ?>"><? print $DisplayEventType; ?> 
-				<? print $DisplayEventTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayEventTypeID; ?>"><?php print $DisplayEventType; ?> 
+				<?php print $DisplayEventTypeList; ?>
 			</select>
 		</td>
 	</tr>	
 	<tr>
 		<td align=right height=40>Description:</td>
-		<td align=left colspan=3><input size=40 maxlength=255 type="text" name="appdesc" value="<? print $DisplayDesc; ?>"> </td>
+		<td align=left colspan=3><input size=40 maxlength=255 type="text" name="appdesc" value="<?php print $DisplayDesc; ?>"> </td>
 	</tr>
 </table>
 <center>
@@ -458,7 +458,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 </table>
 </center>
-<input type='hidden' name='appid'  value='<? print $DisplayAppID; ?>'>
+<input type='hidden' name='appid'  value='<?php print $DisplayAppID; ?>'>
 </form>
 </div>
 </body>

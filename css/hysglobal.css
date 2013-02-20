@@ -1,0 +1,853 @@
+	/*  The following I copied in from tutorial on css */
+	
+.banner {
+		position: absolute;
+		left:1px;
+		top:1px;
+		height:30px;
+		width:1000px;
+		border-top:1px solid white;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		background:#fff;
+		}
+		
+.PUbanner {
+		position: absolute;
+		left:1px;
+		top:1px;
+		height:30px;
+		width:400px;
+		border-top:1px solid white;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		background:#fff;
+		}
+		
+.mainNav {
+		position: absolute;
+		left:1px;
+		top:32px;
+		height:25px;
+		width:1000px;
+		border-top:1px solid white;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		border-bottom:4px solid white;
+		background:#fff;
+		}
+		
+.mainNavCell   { 
+		color: white;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #008080;
+		text-decoration: none;
+		}
+
+.mainNavCell:hover   { 
+		color: #efd864;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #008080;
+		text-decoration: none;
+		}
+		
+.mainNavCellSelect   { 
+		color: #008080;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #efd864;
+		text-decoration: none;
+		}
+		
+.mainNavCellSelect:hover   { 
+		color: red;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: e0b8ba;
+		text-decoration: none;
+		}		
+				
+.mainBar {
+		position: absolute;
+		left:3px;
+		top:32px;
+		height:5px;
+		border-top:3px solid #008080;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		background:#fff;
+		}
+		
+.crumbLine {
+		position:absolute;
+		left:5px;
+		top:70px;
+		height:30px;
+		width:1000px;
+		border-top:01px solid #7e64ef;
+		border-right:0px solid #7e64ef;
+		border-left:0px solid #7e64ef;
+		background: solid #7e64ef;
+		/*  background:#fff; */
+		}
+		
+.dateLine {
+		position:absolute;
+		left:5px;
+		top:39px;
+		height:10px;
+		border-top:1px solid white;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		background:#fff;
+		}
+
+.middlecontent {
+		position: absolute;
+		left:10px;
+		top:70px;
+		height:1000px;
+		background-color: white;
+/*		background-color: #eeeeee; */
+		border:1px solid white;
+		}
+						
+				
+.crumbLineBorder {
+		border: 1px; 
+		font: 700 10px Veranda, Arial,Helvetica;
+		border-top:0px solid #8da98d;
+		border-right:0px solid #8da98d;
+		border-left:0px solid #8da98d;
+		background: #8da98d;
+		}	
+
+.logincrumbLineBorder {
+		border: 1px; 
+		font: 700 10px Veranda, Arial,Helvetica;
+		border-top:0px solid white;
+		border-right:0px solid white;
+		border-left:0px solid white;
+		background: solid white;
+		}	
+
+/* used in 2 and 3 column pages */
+.leftcontent {
+		position: absolute;
+		left:5px;
+		top:120px;
+		width:250px;
+		height:1000px;
+		background-color: #8da98d;
+/*		background-color: #eeeeee; */
+		border:0px solid white;
+		}
+
+/* used in 3 column pages */
+.centercontent {
+		position: absolute;
+		left:215px;
+		top:85px;
+		width:600px;
+		height:1000px;
+		background-color: white;
+		border:0px solid white;
+		}
+/* used in 3 column pages */
+.rightSelectServicePos {
+		position: absolute;
+		left:0px;
+		top:6px;
+		width:700px;
+		height:45px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+.centerCalHdr {
+		position: absolute;
+		left:0px;
+		top:0px;
+		width:600px;
+		height:45px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+/* used */
+.centerContent2 {
+		position: absolute;
+		left:0px;
+		top:0px;
+		width:600px;
+		height:250px;
+		background-color: white;
+		border:0px solid white;
+		}
+
+/* used in 3 column pages */
+.centerCalHdr2 {
+		position: float;
+		left:0px;
+	/*	top:0px; */
+		width:600px;
+		height:35px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+.rightcontentNext1 {
+		position: absolute;
+		left:0px;
+		top:150px; 
+		width:700px;
+		height:200px;
+		background-color: white;
+		border:0px solid white;
+		}		
+.rightcontentSplitLeft {
+		position: absolute;
+		left:0px;
+		top:90px;
+		width:320px;
+		height:250px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+.rightcontentSplitRight {
+		position: absolute;
+		left:320px;
+		top:90px;
+		width:325px;
+		height:225px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+.rightcontentNext2 {
+		position: absolute;
+		left:0px;
+		top:350px; 
+		width:700px;
+		height:200px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+.rcPrescripNext2 {
+		position: absolute;
+		left:0px;
+		top:350px; 
+		width:700px;
+		height:500px;
+		background-color: white;
+		border:0px solid white;
+		}		
+
+.rightcontentNext3 {
+		position: absolute;
+		left:0px;
+		top:600px; 
+		width:700px;
+		height:200px;
+		background-color: white;
+		border:0px solid white;
+		}
+
+				
+/* used in 2 column pages */
+.rightcontent2 {
+		position: absolute;
+		left:280px;
+		top:135px;
+		width:700px;
+		height:900px;
+		background-color: white;
+		border:0px solid white;
+		}
+		
+/* used in 3 column pages */	
+.rightcontent {
+		position: absolute;
+		padding-left:10px;
+		left:820px;
+		top:90px;
+		width:190px;
+		height:700px;
+		background-color: #e1f7f6;
+		border:1px solid white;
+	 }
+	
+.bottomline {
+		position: absolute; 
+		top:1300px; 
+		background-color: white;
+		border:1px solid white;
+		}
+
+.bottomlineCS {
+		position: absolute; 
+		top:700px; 
+		background-color: white;
+		border:1px solid white;
+		}
+				
+.headerLineCS {
+		position:absolute;
+		left:5px;
+		top:90px;
+		height:20px;
+		width:1020px;
+		border-top:1px solid white;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		background:#fff;
+		}
+		
+.headerBorderCS {
+		color:black;
+		font: 700 20px Arial,Helvetica;
+		border-top:0px solid black;
+		border-left:0px solid black;
+		border-right:0px solid black;
+		border-bottom:2px solid black;
+		}		
+						
+/* used in 2 cust serv pages */
+.leftcontentCS {
+		position: absolute;
+		padding-left:10px;
+		left:20px;
+		top:140px;
+		width:485;
+		height:700px;
+		background-color: white
+/*		background-color: #eeeeee; */
+		border:1px solid white;
+		}
+
+/* used in 2 cust serv pages */
+.rightcontentCS {
+		position: absolute;
+		left:520;
+		top:140px;
+		width:505;
+		height:700px;
+		background-color: white;
+		border:1px solid white;
+		}		
+
+.headerBorderPos {
+		position: absolute;
+		left:0px;
+		top:20px;
+		}	
+		
+.headerBorder {
+		color:blue;
+		font: 700 15px Arial,Helvetica;
+		border-top:0px solid blue;
+		border-left:0px solid blue;
+		border-right:0px solid blue;
+		border-bottom:1px solid blue;
+		}	
+
+.headerBorderGold {
+		color:#23708e;
+		font: 700 15px Arial,Helvetica;
+		border-top:0px solid #d1b60c;
+		border-left:0px solid #d1b60c;
+		border-right:0px solid #d1b60c;
+		border-bottom:1px solid #d1b60c;
+		}		
+		
+.selectServiceHdr {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		letter-spacing: 12;
+		color: white;
+		text-align: center;
+		background: #CC0000;
+		/* background: #8da98d; */
+		}	
+				
+.topLineBorder {
+		border: 1px;
+		background: #008080;
+		}
+	
+/* 		background:#669999;    */
+/* 400 = normal 700 = bold  */		
+
+.topicBorder {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		color: white;
+		text-align: center;
+		background: #008080;
+		/* background: #7e64ef; */
+		/* background: #8da98d; */
+		}	
+		
+.topicBorder2 {
+		color: white;
+		font: 700 15px Arial,Helvetica;
+		border-top:0px solid #8da98d;
+		border-left:1px solid #8da98d;
+		border-right:1px solid #8da98d;
+		border-bottom:0px solid white;
+		text-align: left;
+		background: #8da98d;
+		}	
+		
+.outerBorder {
+		border-top:0px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+}		
+	 
+.outerBorderRed {
+		border-top:0px solid red;
+		border-left:1px solid red;
+		border-right:1px solid red;
+		border-bottom:1px solid red;
+}		
+
+.outerBorderBlue {
+		border-top:0px solid blue;
+		border-left:1px solid blue;
+		border-right:1px solid blue;
+		border-bottom:1px solid blue;
+}		
+
+.outerBorderGreen {
+		border-top:0px solid green;
+		border-left:1px solid green;
+		border-right:1px solid green;
+		border-bottom:1px solid green;
+}		
+	 	 	 	 
+.outerBorderSMtxt {
+		font: 400 10px Verdana, Arial, Helvetica;
+		border-top:0px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+}		
+	 	 
+.outerBorderSMtxt3sides {
+		font: 400 10px Verdana, Arial, Helvetica;
+		border-top:1px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+}		
+		 
+.outerBox {
+		border-top:1px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+}		
+
+.outerBoxRed {
+		border-top:1px solid red;
+		border-left:1px solid red;
+		border-right:1px solid red;
+		border-bottom:1px solid red;
+}		
+
+.outerBoxBlue {
+		border-top:1px solid #052faf;
+		border-left:1px solid #052faf;
+		border-right:1px solid #052faf;
+		border-bottom:1px solid #052faf;
+}		
+
+.outerBoxBackGrdLA {
+		border-top:1px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+		background: #efd864;
+}		
+
+.outerBoxBackGrdSouthWest {
+		border-top:1px solid #008080;
+		border-left:1px solid #008080;
+		border-right:1px solid #008080;
+		border-bottom:1px solid #008080;
+		background: #f4ab5d;
+}	 
+	 
+.outerBorderTitle {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		border-top:0px solid #3366FF;
+		border-left:1px solid #3366FF;
+		border-right:1px solid #3366FF;
+		border-bottom:0px solid #3366FF;
+/*		height:10px; */
+		background: #3366FF;
+}				
+
+.outerBorderTitleRed {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		border-top:0px solid red;
+		border-left:1px solid red;
+		border-right:1px solid red;
+		border-bottom:0px solid red;
+/*		height:10px; */
+		background: red;
+}				
+
+.outerBorderTitleGreen {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		border-top:0px solid green;
+		border-left:1px solid green;
+		border-right:1px solid green;
+		border-bottom:0px solid green;
+/*		height:10px; */
+		background: green;
+}				
+	 	 	 	
+.outerBorderTitleBlue {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		border-top:1px solid #052faf;
+		border-left:1px solid #052faf;
+		border-right:1px solid #052faf;
+		border-bottom:1px solid #052faf;
+/*		height:10px; */
+		background: #052faf;
+}				
+				
+.outerBorderTitleBlueLetterSpace {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		letter-spacing: 8px;
+		border-top:0px solid #052faf;
+		border-left:1px solid #052faf;
+		border-right:1px solid #052faf;
+		border-bottom:0px solid #052faf;
+/*		height:10px; */
+		background: #052faf;
+}				
+				
+.outerBorderCS {
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:1px solid #C6D7C6;
+}		
+	 
+.outerBorderTitleCS {
+		color: black;
+		font: 700 15px Arial,Helvetica;
+		text-align: left;
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:0px solid #C6D7C6;
+/*		height:10px; */
+		background: #C6D7C6;
+}					 
+
+.sectionHead {
+		font: 700 12px Arial,Helvetica;color:white;
+		}
+				
+.leftLink   { 
+		font: 700 13px Arial,Geneva;
+		color: black; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+				
+.leftLink:hover   { 
+		color: #339900; 
+		color: blue;
+		font: 700 13px Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: underline;
+		}
+
+.leftLinkSel   { 
+		color: blue; 
+		font: 700 13px Arial,Geneva;
+		font-style: italic;
+		line-height: 15px;  
+		text-decoration: none;
+		}	
+			
+.leftLinkCellSel {
+		border-top:1px solid white;
+		border-left:1px solid white;
+		border-right:1px solid white;
+		border-bottom:1px solid white;
+		line-height: 15px; 
+		text-align: left;
+		vertical-align: middle;
+		}
+
+.blueLink   { 
+		font: 700 13px Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+
+.blueLink:hover   { 
+		color: #339900; 
+		color: blue;
+		font: 700 13px Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: underline;
+		}
+						
+		
+.tableTitleRed {
+		border: 0px; 
+		font: 700 italic 15px  Arial,Helvetica;
+		text-align: left;
+		color: red;
+		background: white;
+	/*	background: #8da98d; */
+		}
+			
+.detailHdrBorder {
+		color: black; 
+		line-height: 20px; 
+		font: 500 15px Arial, Geneva; 
+		border-bottom:1px solid #008080;
+		text-decoration: none;
+		text-align: center;
+		background: white;
+		}		
+		.	
+.BreadcrumbTopLevel	{
+		font: 100 12px Verdana,Arial,Helvetica;
+		color:#336666;
+		}
+				
+.BreadcrumbSelected	{
+		font: 700 12px Arial,Helvetica;
+		}
+		
+.importMsgBorder {
+		border: 1px; 
+		background: #FF9999;
+		}
+
+.tblDetailsmTextLinkOn  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:none;
+		background:#CCFFFF;
+		}
+		
+.tblDetailsmTextLinkOn:hover  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:underline;
+		background:#CCFFFF;
+		}
+				
+.tblDetailsmTextLinkOff  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		}
+
+.tblDetailsmTextLinkOff:hover  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva;
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: underline
+		}
+							
+			
+.tblDetailsmTextOn  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:none;
+		background:#CCFFFF;
+		}
+				
+.tblDetailsmTextOff  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		background: white;
+		}
+		
+.cellfillSiennaSmTxt   { 
+		font: 400 13px Arial, Geneva;
+		line-height: 14px; 
+		background: #efd864;
+		}		
+			
+/* .tblDetailsmText:hover   { 
+		color: #171717; 
+		font-size: 15px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		text-decoration: underline;
+		}			
+*/
+.popupLine   { 
+		color: #008080;
+		}
+
+.popup {
+		color: black; 
+		line-height: 20px; 
+		font: 400 15px Arial, Geneva; 
+		text-decoration: none;
+		text-align: left;
+		}		
+					
+.Header {
+		font: 700 15px Arial,Helvetica;
+		}
+
+
+.SmallTextHeader {
+		font: 700 10px Verdana, Arial,Helvetica;
+		}
+		
+.smallText {
+		font: 400 10px Verdana, Arial, Helvetica;
+		}
+
+.smallText2 {
+		font: 400 13px Arial, Geneva;
+		line-height: 14px; 
+		}
+
+.smallText3 {
+		font: 700  13px Arial, Geneva;
+		line-height: 15px; 
+		}
+				
+.smallLinkAttention   { 
+		font: 700 10px Arial,Geneva;
+		color: red; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+
+.smallLinkAttention:hover   { 
+		color: #339900; 
+		color: red;
+		font: 700 10px Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: underline;
+		}
+		
+.smallLink   { 
+		font: 700 10px Arial,Geneva;
+		color: black; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+								
+.smallLink:hover   { 
+		color: #339900; 
+		color: black;
+		font: 700 10px Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: underline;
+		}
+
+.smallLinkSel   { 
+		color: blue; 
+		font: 700 10px Arial,Geneva;
+		font-style: italic;
+		line-height: 15px;  
+		text-decoration: none;
+		background: white;
+		}
+					
+.smallLinkCellSel {
+		border-top:1px solid white;
+		border-left:1px solid white;
+		border-right:1px solid white;
+		border-bottom:1px solid white;
+		line-height: 15px; 
+		text-align: left;
+		vertical-align: middle;
+		background: white;
+		}
+
+.ArticleHeader {
+		font: 700 15px Arial,Helvetica; 
+		font-style: italic;
+		text-align: left;
+		color:#666666;
+		}	
+
+.Footnote {
+		font: 100 11px Arial,Helvetica;
+		}
+
+.sGry {
+		font:11px Arial,Helvetica;
+		text-decoration:underline; 
+		color:#333;
+		}
+.smallTxtGry {
+		font:400 13px Arial,Geneva;
+		color:#333;
+		}
+		
+.sGry2 {
+		font:11px Arial,Helvetica;
+		color:#333;
+		}
+
+.hp {
+		font:700 9px Verdana;
+		}

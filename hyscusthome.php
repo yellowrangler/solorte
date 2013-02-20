@@ -59,7 +59,7 @@ function startUp()
 {
 	changeCellClass(1);
 	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 }
 
 function changeCellClass(id) 
@@ -96,9 +96,9 @@ function changeCellClass(id)
 
 <body onload="startUp()">
 
-<? require ('hysTopLegend.php'); ?>
+<?php require ('hysTopLegend.php'); ?>
 
-<? require ('hysMainNav.php'); ?>
+<?php require ('hysMainNav.php'); ?>
 
 <div class="selectedContent">
 <div id="leftcontent" class="leftcontent">
@@ -136,7 +136,7 @@ function changeCellClass(id)
 </center>
 
 <br><br>
- <? require ('hysNamePhoto.php'); ?>
+ <?php require ('hysNamePhoto.php'); ?>
 </div>
 
 <div align="center">
@@ -144,7 +144,7 @@ function changeCellClass(id)
 </div>
 </div>
 
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

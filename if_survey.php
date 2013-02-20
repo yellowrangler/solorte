@@ -13,9 +13,9 @@ td { font: 400 13px Arial, Geneva; line-height: 20px;}
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>

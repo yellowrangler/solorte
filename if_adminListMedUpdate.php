@@ -52,9 +52,9 @@ require ('hysInit.php');
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 function changeCellClass(id) 

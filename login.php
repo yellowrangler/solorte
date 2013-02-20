@@ -44,14 +44,14 @@ function setHostVariables($HostID, &$host, &$user, &$password)
 			
 		case 3:
 			$host = "localhost";
-			$user = "tarryc";
-			$password = "janetc";
+			$user = "root";
+			$password = "tarryc";
 			break;
 			
 		case 4:
-			$host = "family";
-			$user = "tarryc";
-			$password = "janetc";
+			$host = "localhost";
+			$user = "root";
+			$password = "tarryc";
 			break;		
 	}			
 }  // end of func
@@ -126,7 +126,7 @@ $conn = mysql_connect($host, $user, $password);
 if (!$conn) 
 {
 	$sqlerr = mysql_error();
-	$errmsg = "$sqlerr -  Error doing mysql_select_db for ClientInfoDB (82) - '$_POST[userid]'";
+	$errmsg = "$sqlerr -  Error doing mysql_select_db for ClientInfoDB (82a) - '$_POST[userid]'";
 	$shortmsg = "System DB error.  If this persists, Please call Customer Support.";
 	$location = "Location: hysmain.php";
 	$severity = 1;

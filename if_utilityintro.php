@@ -22,7 +22,7 @@ require ('hysInit.php');
 
 </head>
 
-<body <? print $BodySelectColor ?> >
+<body <?php print $BodySelectColor ?> >
 <br><br>
 <table width="100%">	
 	<tr>

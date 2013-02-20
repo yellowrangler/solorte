@@ -312,9 +312,9 @@ if ($countRows > 0)
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 <!--
@@ -456,7 +456,7 @@ function fieldCheck(strValue, strEdit)
 </script>
 
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="medInsureArea">
 <form  action="UAmedinsure.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
@@ -467,24 +467,24 @@ function fieldCheck(strValue, strEdit)
 <table width="100%" class="tblDetailsmTextOff">
 	<tr> 
 		<td height=30 width="50%" align=left>Insurer:&nbsp;<select name="payorname"> 
-			<option class="smallTxtGry" value="<? print $PayorID[1]; ?>"><? print $PayorName[1]; ?> 
-			<? print $PayorNameList[1]; ?>
+			<option class="smallTxtGry" value="<?php print $PayorID[1]; ?>"><?php print $PayorName[1]; ?> 
+			<?php print $PayorNameList[1]; ?>
 			</select>
 		</td>
-		<td height=30 width="50%" align=left>Primary Care Doctor:&nbsp;<select name="provider"> <option class="smallTxtGry" value="<? print $ProviderID[1]; ?>"><? print $PrimaryProvider[1]; ?> 
-			<? print $ProviderList; ?>
+		<td height=30 width="50%" align=left>Primary Care Doctor:&nbsp;<select name="provider"> <option class="smallTxtGry" value="<?php print $ProviderID[1]; ?>"><?php print $PrimaryProvider[1]; ?> 
+			<?php print $ProviderList; ?>
 			</select>
 		</td>
 	</tr> 
 	
 	<tr>
-		<td  height=30 width="50%" align=left>Group ID:&nbsp;<input size=15 maxlength=25 type="text" name="groupid" value="<? print $GroupID[1]; ?>"></td>
-		<td  height=30 width="50%" align=left>Subscriber ID:&nbsp;<input size=15 maxlength=25 type="text" name="subscriber" value="<? print $SubscriberID[1]; ?>"></td>
+		<td  height=30 width="50%" align=left>Group ID:&nbsp;<input size=15 maxlength=25 type="text" name="groupid" value="<?php print $GroupID[1]; ?>"></td>
+		<td  height=30 width="50%" align=left>Subscriber ID:&nbsp;<input size=15 maxlength=25 type="text" name="subscriber" value="<?php print $SubscriberID[1]; ?>"></td>
 	</tr> 
 	
 	<tr> 
-		<td  height=30 width="50%" align=left>Office visit Co-Pay:&nbsp;<input size=15 maxlength=45 type="text" name="copay" value="<? print $OfficeCoPay[1]; ?>"></td>
-		<td  height=30 width="50%" align=left>Insurance Telephone Nbr:&nbsp;<? print $PayorTeleNbr[1]; ?></td>
+		<td  height=30 width="50%" align=left>Office visit Co-Pay:&nbsp;<input size=15 maxlength=45 type="text" name="copay" value="<?php print $OfficeCoPay[1]; ?>"></td>
+		<td  height=30 width="50%" align=left>Insurance Telephone Nbr:&nbsp;<?php print $PayorTeleNbr[1]; ?></td>
 	</tr>
 	
 	<tr> 
@@ -506,11 +506,11 @@ function fieldCheck(strValue, strEdit)
 								<td align=center class="smTxt"><b>Suffix</b></td>
 							</tr>	
 							<tr>
-								<td align=center><input size=3 maxlength=5 type="text" name="prefix" value="<? print $PINamePrefix[1]; ?>"></td>
-								<td align=center><input size=15 maxlength=45 type="text" name="firstname" value="<? print $PINameFirst[1]; ?>"></td>
-								<td align=center><input size=1 maxlength=1 type="text" name="mi" value="<? print $PINameMI[1]; ?>"></td>
-								<td align=center><input size=15 maxlength=45 type="text" name="lastname" value="<? print $PINameLast[1]; ?>"></td>
-								<td align=center><input size=3 maxlength=5 type="text" name="suffix" value="<? print $PINameSuffix[1]; ?>"></td>
+								<td align=center><input size=3 maxlength=5 type="text" name="prefix" value="<?php print $PINamePrefix[1]; ?>"></td>
+								<td align=center><input size=15 maxlength=45 type="text" name="firstname" value="<?php print $PINameFirst[1]; ?>"></td>
+								<td align=center><input size=1 maxlength=1 type="text" name="mi" value="<?php print $PINameMI[1]; ?>"></td>
+								<td align=center><input size=15 maxlength=45 type="text" name="lastname" value="<?php print $PINameLast[1]; ?>"></td>
+								<td align=center><input size=3 maxlength=5 type="text" name="suffix" value="<?php print $PINameSuffix[1]; ?>"></td>
 							</tr>	 
 						</table>
 					</td>
@@ -542,24 +542,24 @@ function fieldCheck(strValue, strEdit)
 <table width="100%" class="tblDetailsmTextOff">
 	<tr> 
 		<td  height=30 width="50%" align=left>Insurer:&nbsp;<select name="payorname"> 
-			<option class="smallTxtGry" value="<? print $PayorID[2]; ?>"><? print $PayorName[2]; ?> 
-			<? print $PayorNameList[2]; ?>
+			<option class="smallTxtGry" value="<?php print $PayorID[2]; ?>"><?php print $PayorName[2]; ?> 
+			<?php print $PayorNameList[2]; ?>
 			</select>
 		</td>
-		<td  height=30 width="50%" align=left>Primary Care Doctor:&nbsp;<select name="provider"> <option class="smallTxtGry" value="<? print $ProviderID[2]; ?>"><? print $PrimaryProvider[2]; ?> 
-			<? print $ProviderList; ?>
+		<td  height=30 width="50%" align=left>Primary Care Doctor:&nbsp;<select name="provider"> <option class="smallTxtGry" value="<?php print $ProviderID[2]; ?>"><?php print $PrimaryProvider[2]; ?> 
+			<?php print $ProviderList; ?>
 			</select>
 		</td>
 	</tr> 
 	
 	<tr>
-		<td  height=30 width="50%" align=left>Group ID:&nbsp;<input size=15 maxlength=25 type="text" name="groupid" value="<? print $GroupID[2]; ?>"></td>
-		<td  height=30 width="50%" align=left>Subscriber ID:&nbsp;<input size=15 maxlength=25 type="text" name="subscriber" value="<? print $SubscriberID[2]; ?>"></td>
+		<td  height=30 width="50%" align=left>Group ID:&nbsp;<input size=15 maxlength=25 type="text" name="groupid" value="<?php print $GroupID[2]; ?>"></td>
+		<td  height=30 width="50%" align=left>Subscriber ID:&nbsp;<input size=15 maxlength=25 type="text" name="subscriber" value="<?php print $SubscriberID[2]; ?>"></td>
 	</tr> 
 	
 	<tr> 
-		<td  height=30 width="50%" align=left>Office visit Co-Pay:&nbsp;<input size=15 maxlength=45 type="text" name="copay" value="<? print $OfficeCoPay[2]; ?>"></td>
-		<td  height=30 width="50%" align=left>Insurance Telephone Nbr:&nbsp;<? print $PayorTeleNbr[2]; ?></td>
+		<td  height=30 width="50%" align=left>Office visit Co-Pay:&nbsp;<input size=15 maxlength=45 type="text" name="copay" value="<?php print $OfficeCoPay[2]; ?>"></td>
+		<td  height=30 width="50%" align=left>Insurance Telephone Nbr:&nbsp;<?php print $PayorTeleNbr[2]; ?></td>
 	</tr>
 	
 	<tr> 
@@ -581,11 +581,11 @@ function fieldCheck(strValue, strEdit)
 								<td align=center class="smTxt"><b>Suffix</b></td>
 							</tr>	
 							<tr>
-								<td align=center><input size=3 maxlength=5 type="text" name="prefix" value="<? print $PINamePrefix[2]; ?>"></td>
-								<td align=center><input size=15 maxlength=45 type="text" name="firstname" value="<? print $PINameFirst[2]; ?>"></td>
-								<td align=center><input size=1 maxlength=1 type="text" name="mi" value="<? print $PINameMI[2]; ?>"></td>
-								<td align=center><input size=15 maxlength=45 type="text" name="lastname" value="<? print $PINameLast[2]; ?>"></td>
-								<td align=center><input size=3 maxlength=5 type="text" name="suffix" value="<? print $PINameSuffix[2]; ?>"></td>
+								<td align=center><input size=3 maxlength=5 type="text" name="prefix" value="<?php print $PINamePrefix[2]; ?>"></td>
+								<td align=center><input size=15 maxlength=45 type="text" name="firstname" value="<?php print $PINameFirst[2]; ?>"></td>
+								<td align=center><input size=1 maxlength=1 type="text" name="mi" value="<?php print $PINameMI[2]; ?>"></td>
+								<td align=center><input size=15 maxlength=45 type="text" name="lastname" value="<?php print $PINameLast[2]; ?>"></td>
+								<td align=center><input size=3 maxlength=5 type="text" name="suffix" value="<?php print $PINameSuffix[2]; ?>"></td>
 							</tr>	 
 						</table>
 					</td>			

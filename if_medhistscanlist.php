@@ -236,9 +236,9 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 function PopUpScanWindow (hname) 
@@ -259,7 +259,7 @@ function PopUpScanWindow (hname)
 <body onload="startUp()">
 <center>
 <table width="100%" cellspacing=0 border=0>
-		<? print $DisplayBlock; ?>
+		<?php print $DisplayBlock; ?>
 </table>
 
 </center>

@@ -38,14 +38,14 @@ function setHostVariables($HostID, &$host, &$user, &$password)
 			
 		case 3:
 			$host = "localhost";
-			$user = "tarryc";
-			$password = "janetc";
+			$user = "root";
+			$password = "tarryc";
 			break;
 					
 		case 4:
-			$host = "family";
-			$user = "tarryc";
-			$password = "janetc";
+			$host = "localhost";
+			$user = "root";
+			$password = "tarryc";
 			break;		
 	}			
 }  // end of func
@@ -112,7 +112,7 @@ if (!$conn)
 if (!mysql_select_db("ClientInfoDB", $conn)) 
 {
 	$sqlerr = mysql_error();
-	$errmsg = "$sqlerr - Error doing mysql_select_db for ClientInfoDB (82) - '$_POST[MP]'";
+	$errmsg = "$sqlerr - Error doing mysql_select_db for ClientInfoDB (82b) - '$_POST[MP]'";
 	$location ="Location: invalidlogin.php";
 	LogErr($shortmsg, $errmsg, $location, $module, $severity);
 }	

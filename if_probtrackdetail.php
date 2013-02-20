@@ -506,15 +506,15 @@ if ( isset($_GET[probtrackid]) and ($_GET[probtrackid] != "") )
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
   
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div name="detailArea" class="detailArea">
 <form  action="UAprobtrack.php" method=post>
@@ -530,32 +530,32 @@ function startUp()
 	
 	<tr>
 		<td align=right height=35>Date:</td>
-		<td align=left><input <? print $readonly; ?> size=12 maxlength=15 type="text" name="ptdate" value="<? print $DisplayDate; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=12 maxlength=15 type="text" name="ptdate" value="<?php print $DisplayDate; ?>"></td>
 	
 		<td align=right height=35>Time:</td>
-		<td align=left><input <? print $readonly; ?> size=8 maxlength=15 type="text" name="pttime" value="<? print $DisplayTime; ?>"></td>	
+		<td align=left><input <?php print $readonly; ?> size=8 maxlength=15 type="text" name="pttime" value="<?php print $DisplayTime; ?>"></td>	
 	</tr>
 	<tr>
 		<td align=right height=35>Name:</td>
-		<td align=left><input <? print $readonly; ?> size=50 maxlength=50 type="text" name="name" value="<? print $DisplayName; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=50 maxlength=50 type="text" name="name" value="<?php print $DisplayName; ?>"></td>
 		
 		<td align=right height=35>ID:</td>
-		<td align=left><input <? print $readonly; ?> size=8 maxlength=8 type="text" name="ptid" value="<? print $DisplayTrackingID; ?>"></td>	
+		<td align=left><input <?php print $readonly; ?> size=8 maxlength=8 type="text" name="ptid" value="<?php print $DisplayTrackingID; ?>"></td>	
 	</tr>
 	<tr>
 		<td align=right height=35>Severity:</td>
 		<td align=left>
 			<select name="ptseverity"> 
-				<option class="smallTxtGry" value="<? print $DisplaySeverityID; ?>"><? print $DisplaySeverity; ?> 
-				<? print $DisplayProblemSeverityList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplaySeverityID; ?>"><?php print $DisplaySeverity; ?> 
+				<?php print $DisplayProblemSeverityList; ?>
 			</select>
 		</td>
 		
 		<td align=right height=35>Status:</td>
 		<td align=left>
 			<select name="ptstatus"> 
-				<option class="smallTxtGry" value="<? print $DisplayStatusID; ?>"><? print $DisplayStatus; ?> 
-				<? print $DisplayProblemStatusList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayStatusID; ?>"><?php print $DisplayStatus; ?> 
+				<?php print $DisplayProblemStatusList; ?>
 			</select>
 		</td>
 	</tr>
@@ -563,16 +563,16 @@ function startUp()
 		<td align=right height=35>Area:</td>
 		<td align=left>
 			<select name="ptarea"> 
-				<option class="smallTxtGry" value="<? print $DisplayAreaID; ?>"><? print $DisplayArea; ?> 
-				<? print $DisplayProblemAreaList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayAreaID; ?>"><?php print $DisplayArea; ?> 
+				<?php print $DisplayProblemAreaList; ?>
 			</select>
 		</td>
 		
 		<td align=right height=35>Type:</td>
 		<td align=left>
 			<select name="pttype"> 
-				<option class="smallTxtGry" value="<? print $DisplayTypeID; ?>"><? print $DisplayType; ?> 
-				<? print $DisplayProblemTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayTypeID; ?>"><?php print $DisplayType; ?> 
+				<?php print $DisplayProblemTypeList; ?>
 			</select>
 		</td>
 	</tr>
@@ -580,39 +580,39 @@ function startUp()
 		<td align=right height=35>Browser:</td>
 		<td align=left>
 			<select name="ptbrowser"> 
-				<option class="smallTxtGry" value="<? print $DisplayBrowserID; ?>"><? print $DisplayBrowser; ?> 
-				<? print $DisplayBrowserList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayBrowserID; ?>"><?php print $DisplayBrowser; ?> 
+				<?php print $DisplayBrowserList; ?>
 			</select>
 		</td>
 		<td align=right height=35>Browser Other:</td>
-		<td align=left><input size=25 maxlength=50 type="text" name="ptbrowserother" value="<? print $DisplayBrowserOther; ?>"> </td>
+		<td align=left><input size=25 maxlength=50 type="text" name="ptbrowserother" value="<?php print $DisplayBrowserOther; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>OS:</td>
 		<td align=left>
 			<select name="ptos"> 
-				<option class="smallTxtGry" value="<? print $DisplayOSID; ?>"><? print $DisplayOS; ?> 
-				<? print $DisplayOSList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayOSID; ?>"><?php print $DisplayOS; ?> 
+				<?php print $DisplayOSList; ?>
 			</select>
 		</td>
 		<td align=right height=35>OS Other:</td>
-		<td align=left><input size=25 maxlength=50 type="text" name="ptosother" value="<? print $DisplayOSOther; ?>"> </td>
+		<td align=left><input size=25 maxlength=50 type="text" name="ptosother" value="<?php print $DisplayOSOther; ?>"> </td>
 	</tr>
 	<tr>
 		<td valign=top align=right height=35>Problem:</td>
-		<td align=left colspan=3><textarea rows=3 cols=70 name="ptproblem"><? print $DisplayProblem; ?></textarea></td>
+		<td align=left colspan=3><textarea rows=3 cols=70 name="ptproblem"><?php print $DisplayProblem; ?></textarea></td>
 	</tr>
 	<tr>
 		<td align=right height=35>Developer:</td>
-		<td align=left><input size=50 maxlength=50 type="text" name="ptdev" value="<? print $DisplayDeveloper; ?>"></td>
+		<td align=left><input size=50 maxlength=50 type="text" name="ptdev" value="<?php print $DisplayDeveloper; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right height=35>Tester:</td>
-		<td align=left><input size=50 maxlength=50 type="text" name="pttest" value="<? print $DisplayTester; ?>"></td>
+		<td align=left><input size=50 maxlength=50 type="text" name="pttest" value="<?php print $DisplayTester; ?>"></td>
 	</tr>
 	<tr>
 		<td valign=top align=right height=35>Fix:</td>
-		<td align=left colspan=3><textarea rows=3 cols=70 name="ptfix"><? print $DisplayFix; ?></textarea></td>
+		<td align=left colspan=3><textarea rows=3 cols=70 name="ptfix"><?php print $DisplayFix; ?></textarea></td>
 	</tr>
 </table>	
 <center>
@@ -628,7 +628,7 @@ function startUp()
 	</tr>
 </table>
 </center>
-<input type='hidden' name='ptreturn'  value='<? print $module; ?>'>
+<input type='hidden' name='ptreturn'  value='<?php print $module; ?>'>
 </form>
 </div>
 

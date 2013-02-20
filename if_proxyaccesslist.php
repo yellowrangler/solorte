@@ -353,9 +353,9 @@ while ($result_auth_array = mysql_fetch_assoc($sql_auth_result))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -365,7 +365,7 @@ function startUp()
 <div>
 <center>
 <table width="100%" cellspacing=0 cellpadding=0 border=0>
-		<? print $DisplayList; ?>
+		<?php print $DisplayList; ?>
 </table>
 
 </center>

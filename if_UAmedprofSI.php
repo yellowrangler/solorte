@@ -139,14 +139,14 @@ while ($i < 13)
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="detailArea"><form  action="UAmedprofSI.php" method=post>
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
@@ -154,7 +154,7 @@ function startUp()
 	</tr>	
 </table>
 <table width="100%" class="SmTxt">
-	<? print $DisplayBlock; ?>
+	<?php print $DisplayBlock; ?>
 </table>	
 <br>
 <center>

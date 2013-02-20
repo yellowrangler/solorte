@@ -305,15 +305,15 @@ while ($result_array = mysql_fetch_assoc($sql_result_global))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
-<? print $DisplayBlock; ?> 
+<?php print $DisplayBlock; ?> 
 
 </body>
 </html>

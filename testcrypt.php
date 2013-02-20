@@ -36,15 +36,15 @@ if (isset($_POST[stringto]) && ($_POST[stringto] != "") )
 	</tr>	
 	<tr>
 		<td align=right height=35>String to Encrypt:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="stringto" value="<? print $DisplayStringTo; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="stringto" value="<?php print $DisplayStringTo; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Encrypted String:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="encrypt" value="<? print $DisplayEncryptedString; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="encrypt" value="<?php print $DisplayEncryptedString; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Decrypted String:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="decrypt" value="<? print $DisplayDecryptedString; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="decrypt" value="<?php print $DisplayDecryptedString; ?>"> </td>
 	</tr>
 </table>
 <input type="hidden" name="dummy" value="">		

@@ -426,16 +426,16 @@ if ($GotOne != 1)
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>  
 <body onload="startUp()">
 <div class="smallText2">
 
-<? print $DisplayBlock; ?>
+<?php print $DisplayBlock; ?>
 
 </div>
 </body>

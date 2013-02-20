@@ -161,17 +161,17 @@ if ($countRows >  0)
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 
-<? print $jscriptScanDefSelect; ?>
+<?php print $jscriptScanDefSelect; ?>
 
 </script>
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <form name="searchFilter" method="post" ACTION="if_medhistDocScanlist.php" target="docscanFramelist">
 <div class="rightcontentUpper">
@@ -189,7 +189,7 @@ function startUp()
 					<td align=left>
 						<select name="scantype" onchange="buildScanDef();"> 
 							<option class="smallTxtGry" value="">
-							<? print $DisplayScanTypeList; ?>
+							<?php print $DisplayScanTypeList; ?>
 						</select>
 					</td>
 				</tr>	
@@ -205,8 +205,8 @@ function startUp()
 					<td class="smallText2"><input type="checkbox" name="dsfprov" value=1>Provider</td>
 					<td align=left>
 						<select name="dfprovider"> 
-							<option class="smallTxtGry" value="<? print $DisplayProviderID; ?>"><? print $DisplayProvider; ?> 
-							<? print $DisplayProviderList; ?>
+							<option class="smallTxtGry" value="<?php print $DisplayProviderID; ?>"><?php print $DisplayProvider; ?> 
+							<?php print $DisplayProviderList; ?>
 						</select>
 					</td>
 				</tr>	

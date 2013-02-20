@@ -190,9 +190,9 @@ $result_array = mysql_fetch_assoc($sql_result);
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -333,7 +333,7 @@ function fieldCheck(strValue, strEdit)
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="detailArea">
 <form  action="UAmedprofSocial.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
@@ -356,7 +356,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=left height=20>Do you currently smoke?	
-			<select name="profcursmoke"> <option  value="<? print $result_array[CurSmoker]; ?>"> <? print $result_array[CurSmoker]; ?>
+			<select name="profcursmoke"> <option  value="<?php print $result_array[CurSmoker]; ?>"> <?php print $result_array[CurSmoker]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
@@ -364,7 +364,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=left height=20>If you are not a current smoker, are you a <i>former</i> smoker?
-			<select name="profformersmoke"> <option  value="<? print $result_array[FormerSmoker]; ?>"> <? print $result_array[FormerSmoker]; ?>
+			<select name="profformersmoke"> <option  value="<?php print $result_array[FormerSmoker]; ?>"> <?php print $result_array[FormerSmoker]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
@@ -381,15 +381,15 @@ function fieldCheck(strValue, strEdit)
 <table width="95%" class="SmTxt">
 	<tr>
 		<td width=5>&nbsp;</td>
-		<td height=15>A: What did you/do you smoke? <input size=15 maxlength=15 type="text" name="profsmokertype" value="<? print $result_array[SmokerType]; ?>"></td>
+		<td height=15>A: What did you/do you smoke? <input size=15 maxlength=15 type="text" name="profsmokertype" value="<?php print $result_array[SmokerType]; ?>"></td>
 	</tr>
 	<tr>
 		<td width=5>&nbsp;</td>
-		<td height=15>B: How many did you/do you smoke per month? <input size=5 maxlength=5 type="text" name="profsmokermonth" value="<? print $result_array[SmokerperMonth]; ?>"></td>
+		<td height=15>B: How many did you/do you smoke per month? <input size=5 maxlength=5 type="text" name="profsmokermonth" value="<?php print $result_array[SmokerperMonth]; ?>"></td>
 	</tr>
 	<tr>
 		<td width=5>&nbsp;</td>
-		<td height=15>C: How many years have you smoked? <input size=5 maxlength=5 type="text" name="profsmokeryears" value="<? print $result_array[SmokerYears]; ?>"></td>
+		<td height=15>C: How many years have you smoked? <input size=5 maxlength=5 type="text" name="profsmokeryears" value="<?php print $result_array[SmokerYears]; ?>"></td>
 	</tr>	
 </table>
 </div>
@@ -407,7 +407,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=left height=20>Do you currently drink alcohol?	
-			<select name="profalcohol"> <option  value="<? print $result_array[Alcohol]; ?>"> <? print $result_array[Alcohol]; ?>
+			<select name="profalcohol"> <option  value="<?php print $result_array[Alcohol]; ?>"> <?php print $result_array[Alcohol]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
@@ -417,7 +417,7 @@ function fieldCheck(strValue, strEdit)
 		<td height=10 class="ittyTxt">&nbsp;</td>
 	</tr>
 	<tr>
-		<td align=left height=20>If you do drink alcohol, How many drinks do you have per month? <input size=5 maxlength=5 type="text" name="profalcoholperrmonth" value="<? print $result_array[AlcoholperMonth]; ?>"></td>
+		<td align=left height=20>If you do drink alcohol, How many drinks do you have per month? <input size=5 maxlength=5 type="text" name="profalcoholperrmonth" value="<?php print $result_array[AlcoholperMonth]; ?>"></td>
 	</tr>
 </table>
 </div>
@@ -435,7 +435,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=left height=20>Do you exersize regularly?	
-			<select name="profexersize"> <option  value="<? print $result_array[Exersize]; ?>"> <? print $result_array[Exersize]; ?>
+			<select name="profexersize"> <option  value="<?php print $result_array[Exersize]; ?>"> <?php print $result_array[Exersize]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
@@ -452,11 +452,11 @@ function fieldCheck(strValue, strEdit)
 <table width="95%" class="SmTxt">
 	<tr>
 		<td width=5 height=15>&nbsp;</td>
-		<td>A: How often do you exersize per month? <input size=5 maxlength=5 type="text" name="profexersizepermonth" value="<? print $result_array[ExersizeperMonth]; ?>"></td>
+		<td>A: How often do you exersize per month? <input size=5 maxlength=5 type="text" name="profexersizepermonth" value="<?php print $result_array[ExersizeperMonth]; ?>"></td>
 	</tr>
 	<tr>
 		<td width=5>&nbsp;</td>
-		<td height=15>B: Please describe: <input size=50 maxlength=50 type="text" name="profexersizedescription" value="<? print $result_array[ExersizeDescription]; ?>"></td>
+		<td height=15>B: Please describe: <input size=50 maxlength=50 type="text" name="profexersizedescription" value="<?php print $result_array[ExersizeDescription]; ?>"></td>
 	</tr>
 </table>
 		
@@ -467,7 +467,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=left height=20>Are you on a diet?	
-			<select name="profdiet"> <option  value="<? print $result_array[Diet]; ?>"> <? print $result_array[Diet]; ?>
+			<select name="profdiet"> <option  value="<?php print $result_array[Diet]; ?>"> <?php print $result_array[Diet]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
@@ -477,7 +477,7 @@ function fieldCheck(strValue, strEdit)
 		<td height=5 class="ittyTxt">&nbsp;</td>
 	</tr>
 	<tr>
-		<td align=left height=15>If you are on a diet, can you describe it? <input size=30 maxlength=50 type="text" name="profdietdescription" value="<? print $result_array[DietDescription]; ?>"></td>
+		<td align=left height=15>If you are on a diet, can you describe it? <input size=30 maxlength=50 type="text" name="profdietdescription" value="<?php print $result_array[DietDescription]; ?>"></td>
 	</tr>
 </table>
 </div>

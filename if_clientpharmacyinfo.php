@@ -175,20 +175,20 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="pharmacydetailBody">
 <form  action="clientpharmacy.php" target="clientpharmacymainFrame" method=post>
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
-		 <td height=20 align="center"><? print $displayTitle; ?></td>
+		 <td height=20 align="center"><?php print $displayTitle; ?></td>
 	</tr>	
 </table>
 
@@ -198,28 +198,28 @@ function startUp()
 	</tr>
 	<tr>
 		<td align=right height=35>Pharmacy Name:</td>
-		<td align=left><input <? print $readonly; ?> size=35 maxlength=35 type="text" name="pharmacyname" value="<? print $DisplayName; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=35 maxlength=35 type="text" name="pharmacyname" value="<?php print $DisplayName; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right>Address:</td>
-		<td align=left><input <? print $readonly; ?> size=40 maxlength=40 type="text" name="address" value="<? print $result_array[AddrLine1]; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=40 maxlength=40 type="text" name="address" value="<?php print $result_array[AddrLine1]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>City:</td>
-		<td align=left><input <? print $readonly; ?> size=15 maxlength=15 type="text" name="city" value="<? print $result_array[City]; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=15 maxlength=15 type="text" name="city" value="<?php print $result_array[City]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>State:</td>
-		<td align=left><input <? print $readonly; ?> size=2 maxlength=2 type="text" name="city" value="<? print $result_array[State]; ?>"></td>
+		<td align=left><input <?php print $readonly; ?> size=2 maxlength=2 type="text" name="city" value="<?php print $result_array[State]; ?>"></td>
 	</tr>
 </table>
-<input type="hidden" name="pharmacyid" value="<? print $result_array[pharmacyID]; ?>">	
-<input type="hidden" name="clientid" value="<? print $ClientID; ?>">	
+<input type="hidden" name="pharmacyid" value="<?php print $result_array[pharmacyID]; ?>">	
+<input type="hidden" name="clientid" value="<?php print $ClientID; ?>">	
 <input type="hidden" name="Action" value="add">	
 <br><center>
 <table>
 	<tr>
-		<td align=center><input <? print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
+		<td align=center><input <?php print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
 	</tr>
 </table>	
 </center>	
@@ -233,7 +233,7 @@ function startUp()
 	</tr>	
 </table>
 
-<IFRAME name="remorderClientPharmacyFrame" src="if_clientpharmacyremorder.php?clientid=<? print $ClientID; ?>"  target="clientpharmacymainFrame" class="innerremorderClientPharmacyList" scrolling="yes"></IFRAME>
+<IFRAME name="remorderClientPharmacyFrame" src="if_clientpharmacyremorder.php?clientid=<?php print $ClientID; ?>"  target="clientpharmacymainFrame" class="innerremorderClientPharmacyList" scrolling="yes"></IFRAME>
 </div>
 
 </body>

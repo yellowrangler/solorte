@@ -119,9 +119,9 @@ $DisplayYear = $tmpDate[0];
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -262,7 +262,7 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="UAnameaddrName.php" method=post onsubmit="return formCheck(this);">
@@ -274,23 +274,23 @@ function fieldCheck(strValue, strEdit)
 <table width="100%" class="tblDetailsmTextOff">
 	<tr>
 		<td align=right height=40>Prefix:</td>
-		<td align=left><input size=3 maxlength=5 type="text" name="prefix" value="<? print  $result_array[Prefix]; ?>"></td>
+		<td align=left><input size=3 maxlength=5 type="text" name="prefix" value="<?php print  $result_array[Prefix]; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right height=40>First Name:</td>
-		<td align=left><input size=15 maxlength=45 type="text" name="firstname" value="<? print  $result_array[FirstName]; ?>"> </td>
+		<td align=left><input size=15 maxlength=45 type="text" name="firstname" value="<?php print  $result_array[FirstName]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=40>Middle Initial:</td>
-		<td align=left><input size=1 maxlength=1 type="text" name="mi" value="<? print  $result_array[MI]; ?>"> </td>
+		<td align=left><input size=1 maxlength=1 type="text" name="mi" value="<?php print  $result_array[MI]; ?>"> </td>
 	</tr>
 	<tr>	
 		<td align=right height=40>Last Name:</td>
-		<td align=left><input size=15 maxlength=45 type="text" name="lastname" value="<? print  $result_array[LastName]; ?>"> </td>
+		<td align=left><input size=15 maxlength=45 type="text" name="lastname" value="<?php print  $result_array[LastName]; ?>"> </td>
 	</tr>
 	<tr>	
 		<td align=right height=40>Suffix:</td>
-		<td align=left><input size=3 maxlength=5 type="text" name="suffix" value="<? print  $result_array[Suffix]; ?>"></td>
+		<td align=left><input size=3 maxlength=5 type="text" name="suffix" value="<?php print  $result_array[Suffix]; ?>"></td>
 	</tr>
 </table>	
 
@@ -301,29 +301,29 @@ function fieldCheck(strValue, strEdit)
 	<tr>
 		<td align=right height=40>Date of Birth:</td>
 		<td align=left>
-			<input size=2 type="text" name="month" value="<? print $DisplayMonth; ?>">/
-			<input size=2 type="text" name="day" value="<? print $DisplayDay; ?>">/
-			<input size=4 type="text" name="year" value="<? print $DisplayYear; ?>"> (Format MM/DD/YYYY)
+			<input size=2 type="text" name="month" value="<?php print $DisplayMonth; ?>">/
+			<input size=2 type="text" name="day" value="<?php print $DisplayDay; ?>">/
+			<input size=4 type="text" name="year" value="<?php print $DisplayYear; ?>"> (Format MM/DD/YYYY)
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=40>Email Address:</td>
-		<td align=left><input size=50 maxlength=255 type="text" name="email" value="<? print  $result_array[eMailAddr]; ?>"></td>
+		<td align=left><input size=50 maxlength=255 type="text" name="email" value="<?php print  $result_array[eMailAddr]; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right height=40>Mobile Phone Number:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="mphone" value="<? print  $result_array[MobilePhone]; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="mphone" value="<?php print  $result_array[MobilePhone]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=40>Pager Number:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="pagerid" value="<? print  $result_array[PagerID]; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="pagerid" value="<?php print  $result_array[PagerID]; ?>"> </td>
 	</tr>
 	<tr>	
 		<td align=right height=40>Pager Telephone Number:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="pagertelenbr" value="<? print  $result_array[PagerTeleNbr]; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="pagertelenbr" value="<?php print  $result_array[PagerTeleNbr]; ?>"> </td>
 	</tr>
 </table>
-<input type="hidden" name="fullnameid" value="<? print $result_array[FullNameID]; ?>">	
+<input type="hidden" name="fullnameid" value="<?php print $result_array[FullNameID]; ?>">	
 <br><center>
 <table>
 	<tr>

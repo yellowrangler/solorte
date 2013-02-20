@@ -90,7 +90,7 @@ require ('hysInit.php');
 </table>
 
 </div>
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

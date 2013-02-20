@@ -1,0 +1,22 @@
+CREATE TABLE ClientSocialProfileTBL (
+  ID BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  MEDPAL BIGINT UNSIGNED NOT NULL,
+  Smoker CHAR NULL,
+  CurSmoker CHAR NULL,
+  SmokerperDay INTEGER UNSIGNED NULL,
+  SmokerType VARCHAR(15) NULL,
+  SmokerYears INTEGER UNSIGNED NULL,
+  Alcohol CHAR NULL,
+  AlcoholperWeek INTEGER UNSIGNED NULL,
+  Exersize CHAR NULL,
+  ExersizeperMonth INTEGER UNSIGNED NULL,
+  ExersizeDescription VARCHAR(50) NULL,
+  SubstanceAbuse CHAR NULL,
+  SubstanceAbuseDescription VARCHAR(50) NULL,
+  Diet CHAR NULL,
+  DietDescription VARCHAR(50) NULL,
+  PRIMARY KEY(ID),
+  INDEX indexMEDPAL(MEDPAL)
+);
+
+

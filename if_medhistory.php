@@ -105,13 +105,13 @@ require ('hysDBinit.php');
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="rightcontentUpperLeft">
 <form name="search" method="post" ACTION="if_medhistlist.php" target="listFrame">
 <!-- Second outer column of Search -->
@@ -159,9 +159,9 @@ function startUp()
 </table>
 </div>
  
-<IFRAME name="listFrame" src="if_medhistlist.php?eventid=<? print $DisplayEventID; ?>" class="innerSelectframe" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="listFrame" src="if_medhistlist.php?eventid=<?php print $DisplayEventID; ?>" class="innerSelectframe" scrolling=auto frameborder=0> </IFRAME>
 
-<IFRAME name="detailFrame" src="if_medhistdetail.php?eventid=<? print $DisplayEventID; ?>" class="detailFrame" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="detailFrame" src="if_medhistdetail.php?eventid=<?php print $DisplayEventID; ?>" class="detailFrame" scrolling=auto frameborder=0> </IFRAME>
 
 </body>
 </html>

@@ -163,9 +163,9 @@ if ($countRows >  0)
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -307,7 +307,7 @@ function fieldCheck(strValue, strEdit)
 </script>
 
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailArea">
 <form  action="RQrequest.php" method=post onsubmit="return formCheck(this);">
@@ -341,16 +341,16 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=40>Provider:</td>
 		<td align=left>
 			<select name="provider"> 
-				<option class="smallTxtGry" value="<? print $DisplayProviderID; ?>"><? print $DisplayProvider; ?> 
-				<? print $DisplayProviderList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayProviderID; ?>"><?php print $DisplayProvider; ?> 
+				<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 		
 		<td  height=40 align=right>Location: </td>
 		<td align=left>
 			<select name="location"> 
-				<option class="smallTxtGry" value="<? print $DisplayHostID; ?>"><? print $DisplayHost; ?> 
-				<? print $DisplayHostList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayHostID; ?>"><?php print $DisplayHost; ?> 
+				<?php print $DisplayHostList; ?>
 			</select>
 		</td>
 	</tr>
@@ -360,7 +360,7 @@ function fieldCheck(strValue, strEdit)
 		<td align=left>
 			<select name="eventtype"> 
 				<option class="smallTxtGry" value="">
-				<? print $DisplayEventTypeList; ?>
+				<?php print $DisplayEventTypeList; ?>
 			</select>
 		</td>
 	<tr>

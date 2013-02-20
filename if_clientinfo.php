@@ -235,9 +235,9 @@ else
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 <!--
@@ -379,13 +379,13 @@ function fieldCheck(strValue, strEdit)
 // -->
 </script>
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="clientinfo.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
-		 <td height=20 align="center"><? print $displayTitle; ?></td>
+		 <td height=20 align="center"><?php print $displayTitle; ?></td>
 	</tr>	
 </table>
 
@@ -413,67 +413,67 @@ function fieldCheck(strValue, strEdit)
 					<td align=center><b>Suffix</b></td>
 				</tr>
 				<tr>
-					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="prefix" value="<? print $result_array[Prefix]; ?>"></td>
-					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="firstname" value="<? print $result_array[FirstName]; ?>"></td>
-					<td valign=bottom align=center><input size=1 maxlength=1 type="text" name="mi" value="<? print $result_array[MI]; ?>"></td>
-					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="lastname" value="<? print $result_array[LastName]; ?>"></td>
-					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="suffix" value="<? print $result_array[Suffix]; ?>"></td>
+					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="prefix" value="<?php print $result_array[Prefix]; ?>"></td>
+					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="firstname" value="<?php print $result_array[FirstName]; ?>"></td>
+					<td valign=bottom align=center><input size=1 maxlength=1 type="text" name="mi" value="<?php print $result_array[MI]; ?>"></td>
+					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="lastname" value="<?php print $result_array[LastName]; ?>"></td>
+					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="suffix" value="<?php print $result_array[Suffix]; ?>"></td>
 				</tr>	 
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Medpal ID:</td>
-		<td align=left><input <? print $UpdateState; print $UpdateClass; ?> size=10  maxlength=10 type="text" name="clientid" value="<? print $DisplayMedpal; ?>"</td>
+		<td align=left><input <?php print $UpdateState; print $UpdateClass; ?> size=10  maxlength=10 type="text" name="clientid" value="<?php print $DisplayMedpal; ?>"</td>
 		
 		<td align=right height=35>Password:</td>
-		<td align=left><input size=10 maxlength=10 type="text" name="clientpassword" value="<? print $DisplayPassword; ?>"> </td>
+		<td align=left><input size=10 maxlength=10 type="text" name="clientpassword" value="<?php print $DisplayPassword; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Address Line 1:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<? print $result_array[AddrLine1]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<?php print $result_array[AddrLine1]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Address Line 2:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<? print $result_array[AddrLine2]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<?php print $result_array[AddrLine2]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>City:</td>
-		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<? print $result_array[City]; ?>"> </td>
+		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<?php print $result_array[City]; ?>"> </td>
 
 		<td align=right height=35>State:</td>
-		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<? print $result_array[State]; ?>"> </td>
+		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<?php print $result_array[State]; ?>"> </td>
 		
 		<td align=right height=35>Zip Code:</td>
-		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<? print $result_array[ZIP]; ?>"> </td>
+		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<?php print $result_array[ZIP]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Phone Number:</td>
-		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="phonenbr" value="<? print $result_array[PhoneNbr]; ?>"> </td>
+		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="phonenbr" value="<?php print $result_array[PhoneNbr]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Mobile Number:</td>
-		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="mobilenbr" value="<? print $result_array[PhoneNbr]; ?>"> </td>
+		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="mobilenbr" value="<?php print $result_array[PhoneNbr]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Pager ID:</td>
-		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="pagerid" value="<? print $result_array[PagerID]; ?>"> </td>
+		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="pagerid" value="<?php print $result_array[PagerID]; ?>"> </td>
 	</tr>
 	<tr>	
 		<td align=right height=35>Pager Phone Number:</td>
-		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="pagerphonenbr" value="<? print $result_array[PagerTeleNbr]; ?>"> </td>
+		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="pagerphonenbr" value="<?php print $result_array[PagerTeleNbr]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Date of Birth:</td>
-		<td align=left colspan=5><input size=10 maxlength=10 type="text" name="dob" value="<? print $DisplayDOB; ?>"> </td>
+		<td align=left colspan=5><input size=10 maxlength=10 type="text" name="dob" value="<?php print $DisplayDOB; ?>"> </td>
 	</tr>
 	
 	<tr>
 		<td align=right height=35>eMail Address:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="email" value="<? print $result_array[eMailAddr]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="email" value="<?php print $result_array[eMailAddr]; ?>"> </td>
 	</tr>
 </table>
-<input type="hidden" name="Action" value="<? print $isType; ?>">		
+<input type="hidden" name="Action" value="<?php print $isType; ?>">		
 <br><center>
 <table>
 	<tr>

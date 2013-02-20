@@ -140,9 +140,9 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 <style type="text/css">	
@@ -255,7 +255,7 @@ function startUp()
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="leftClientSearch">
 <form name="search" method="post" ACTION="if_clientlistforaccess.php" target="ClientListFrame">
@@ -298,32 +298,32 @@ function startUp()
 	</tr>
 	<tr>
 		<td align=right height=35>Client Name:</td>
-		<td align=left><input class="readonlyText" readonly size=35 maxlength=35 type="text" name="clientname" value="<? print $DisplayName; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=35 maxlength=35 type="text" name="clientname" value="<?php print $DisplayName; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right>Address:</td>
-		<td align=left><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<? print $result_array[AddrLine1]; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<?php print $result_array[AddrLine1]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>City:</td>
-		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<? print $result_array[City]; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<?php print $result_array[City]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>State:</td>
-		<td align=left><input class="readonlyText" readonly size=2 maxlength=2 type="text" name="state" value="<? print $result_array[State]; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=2 maxlength=2 type="text" name="state" value="<?php print $result_array[State]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>Date of Birth:</td>
-		<td align=left><input class="readonlyText" readonly size=10 maxlength=10 type="text" name="dob" value="<? print $DisplayDOB; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=10 maxlength=10 type="text" name="dob" value="<?php print $DisplayDOB; ?>"></td>
 	</tr>
 </table>	
-<input type="hidden" name="accessuserid" value="<? print $AccessClientID; ?>">
-<input type="hidden" name="medpal" value="<? print $Medpal; ?>">
+<input type="hidden" name="accessuserid" value="<?php print $AccessClientID; ?>">
+<input type="hidden" name="medpal" value="<?php print $Medpal; ?>">
 <input type="hidden" name="Action" value="add">	
 <br><center>
 <table>
 	<tr>
-		<td align=center><input <? print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
+		<td align=center><input <?php print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
 	</tr>
 </table>	
 </center>	
@@ -334,12 +334,12 @@ function startUp()
 <table width="100%" height=20 class="outerBorderTitleGreenLetterSpace">
 		<tr>
 		 <td width="10%" align="center">Del</td>
-		 <td width="25%" align="center"><a href="if_clientsharedaccesslist.php?order=atype&medpal=<? print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Type</a></td>
-		 <td width="25%" align="center"><a href="if_clientsharedaccesslist.php?order=alevel&medpal=<? print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Level</a></td>
-		 <td width="40%" align="center"><a href="if_clientsharedaccesslist.php?order=aname&medpal=<? print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Name</a></td>
+		 <td width="25%" align="center"><a href="if_clientsharedaccesslist.php?order=atype&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Type</a></td>
+		 <td width="25%" align="center"><a href="if_clientsharedaccesslist.php?order=alevel&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Level</a></td>
+		 <td width="40%" align="center"><a href="if_clientsharedaccesslist.php?order=aname&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="ClientaccessListFrame">Name</a></td>
 	</tr>	
 </table>
 </div>
-<IFRAME name="ClientaccessListFrame" src="if_clientsharedaccesslist.php?medpal=<? print $Medpal; ?>"  class="innerSelectframeclientaccesslist" scrolling=yes></IFRAME>
+<IFRAME name="ClientaccessListFrame" src="if_clientsharedaccesslist.php?medpal=<?php print $Medpal; ?>"  class="innerSelectframeclientaccesslist" scrolling=yes></IFRAME>
 </body>
 </html>

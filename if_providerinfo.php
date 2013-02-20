@@ -405,9 +405,9 @@ else
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 <!--
@@ -549,13 +549,13 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="providerinfo.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
-		 <td height=20 align="center"><? print $displayTitle; ?></td>
+		 <td height=20 align="center"><?php print $displayTitle; ?></td>
 	</tr>	
 </table>
 
@@ -575,31 +575,31 @@ function fieldCheck(strValue, strEdit)
 					<td align=center><b>Suffix</b></td>
 				</tr>	
 				<tr>
-					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="prefix" value="<? print $result_array[Prefix]; ?>"></td>
-					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="firstname" value="<? print $result_array[FirstName]; ?>"></td>
-					<td valign=bottom align=center><input size=1 maxlength=1 type="text" name="mi" value="<? print $result_array[MI]; ?>"></td>
-					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="lastname" value="<? print $result_array[LastName]; ?>"></td>
-					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="suffix" value="<? print $result_array[Suffix]; ?>"></td>
+					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="prefix" value="<?php print $result_array[Prefix]; ?>"></td>
+					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="firstname" value="<?php print $result_array[FirstName]; ?>"></td>
+					<td valign=bottom align=center><input size=1 maxlength=1 type="text" name="mi" value="<?php print $result_array[MI]; ?>"></td>
+					<td valign=bottom align=center><input size=15 maxlength=45 type="text" name="lastname" value="<?php print $result_array[LastName]; ?>"></td>
+					<td valign=bottom align=center><input size=3 maxlength=5 type="text" name="suffix" value="<?php print $result_array[Suffix]; ?>"></td>
 				</tr>	 
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td align=right>Provider ID:</td>
-		<td align=left><input <? print $UpdateState; print $UpdateClass; ?> size=10  maxlength=10 type="text" name="providerid" value="<? print $DisplayProviderID; ?>"</td>
+		<td align=left><input <?php print $UpdateState; print $UpdateClass; ?> size=10  maxlength=10 type="text" name="providerid" value="<?php print $DisplayProviderID; ?>"</td>
 		
 		<td align=right height=35>Password:</td>
-		<td align=left><input size=10 maxlength=10 type="text" name="providerpassword" value="<? print $DisplayPassword; ?>"> </td>
+		<td align=left><input size=10 maxlength=10 type="text" name="providerpassword" value="<?php print $DisplayPassword; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>License:</td>
-		<td align=left><input size=10 maxlength=20 type="text" name="license" value="<? print $result_array[ProviderIdentifier]; ?>"> </td>
+		<td align=left><input size=10 maxlength=20 type="text" name="license" value="<?php print $result_array[ProviderIdentifier]; ?>"> </td>
 		
 		<td align=right>Licensing Authority:</td>
 		<td align=left>
 			<select name="licensingauthority"> 
-				<option class="smallTxtGry" value="<? print  $result_array[ProviderIdentifierTypeID]; ?>"><? print  $result_array[ProviderIdentifierType]; ?> 
-				<? print $DisplayProviderIndentifierTypeList; ?>
+				<option class="smallTxtGry" value="<?php print  $result_array[ProviderIdentifierTypeID]; ?>"><?php print  $result_array[ProviderIdentifierType]; ?> 
+				<?php print $DisplayProviderIndentifierTypeList; ?>
 			</select>
 		</td>
 	</tr>
@@ -607,36 +607,36 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=35>Provider Type:</td>
 		<td align=left>
 			<select name="providertype"> 
-				<option class="smallTxtGry" value="<? print  $result_array[ProvTypeID]; ?>"><? print  $result_array[ProviderTypeDesc]; ?> 
-				<? print $DisplayProviderTypeList; ?>
+				<option class="smallTxtGry" value="<?php print  $result_array[ProvTypeID]; ?>"><?php print  $result_array[ProviderTypeDesc]; ?> 
+				<?php print $DisplayProviderTypeList; ?>
 			</select>
 		</td>
 		
 		<td align=right>Specialty Type:</td>
 		<td align=left>
 			<select name="specialtytype"> 
-				<option class="smallTxtGry" value="<? print  $result_array[SpecialtyID]; ?>"><? print  $result_array[SpecialtyDesc]; ?> 
-				<? print $DisplaySpecialtyTypeList; ?>
+				<option class="smallTxtGry" value="<?php print  $result_array[SpecialtyID]; ?>"><?php print  $result_array[SpecialtyDesc]; ?> 
+				<?php print $DisplaySpecialtyTypeList; ?>
 			</select>
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Mobile Phone Number:</td>
-		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="mobilenbr" value="<? print $result_array[MobilePhone]; ?>"> </td>
+		<td align=left colspan=5><input size=15 maxlength=15 type="text" name="mobilenbr" value="<?php print $result_array[MobilePhone]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Pager ID:</td>
-		<td align=left><input size=15 maxlength=15 type="text" name="pagerid" value="<? print $result_array[PagerID]; ?>"> </td>
+		<td align=left><input size=15 maxlength=15 type="text" name="pagerid" value="<?php print $result_array[PagerID]; ?>"> </td>
 		
 		<td align=right height=35>Pager Phone Number:</td>
-		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="pagerphonenbr" value="<? print $result_array[PagerTeleNbr]; ?>"> </td>
+		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="pagerphonenbr" value="<?php print $result_array[PagerTeleNbr]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>eMail Address:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="email" value="<? print $result_array[eMailAddr]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="email" value="<?php print $result_array[eMailAddr]; ?>"> </td>
 	</tr>
 </table>
-<input type="hidden" name="Action" value="<? print $isType; ?>">	
+<input type="hidden" name="Action" value="<?php print $isType; ?>">	
 <br><center>
 <table>
 	<tr>
@@ -650,7 +650,7 @@ function fieldCheck(strValue, strEdit)
 </div>
 
 <div class="addHostSearch">
-<form name="search" method="post" ACTION="if_providerhostadd.php?providerid=<? print $DisplayProviderID; ?>" target="addHostFrame">
+<form name="search" method="post" ACTION="if_providerhostadd.php?providerid=<?php print $DisplayProviderID; ?>" target="addHostFrame">
 <!-- Second outer column of Search -->
 <table height=20 width="100%" class="outerBorderTitleBlueLetterSpace">
 	<tr>
@@ -674,7 +674,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>	
 </table>
 
-<IFRAME name="addHostFrame" src="if_providerhostadd.php?providerid=<? print $DisplayProviderID; ?>"  class="inneraddHostList" scrolling="yes"></IFRAME>
+<IFRAME name="addHostFrame" src="if_providerhostadd.php?providerid=<?php print $DisplayProviderID; ?>"  class="inneraddHostList" scrolling="yes"></IFRAME>
 </div>
 
 <div class="remordertitleHostList">
@@ -684,7 +684,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>	
 </table>
 
-<IFRAME name="remorderHostFrame" src="if_providerhostremorder.php?providerid=<? print $DisplayProviderID; ?>"  class="innerremorderHostList" scrolling="yes"></IFRAME>
+<IFRAME name="remorderHostFrame" src="if_providerhostremorder.php?providerid=<?php print $DisplayProviderID; ?>"  class="innerremorderHostList" scrolling="yes"></IFRAME>
 </div>
 </body>
 </html>

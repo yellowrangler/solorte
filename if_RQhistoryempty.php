@@ -23,7 +23,7 @@ require ('hysInit.php');
 
 </head>
 
-<body <? print $BodySelectColor ?> >
+<body <?php print $BodySelectColor ?> >
 <br><br><br>
 <center>
 <b>Client Request History detail will be displayed here.</b>

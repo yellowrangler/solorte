@@ -163,10 +163,10 @@ function startUp()
 {
 	changeCellClass(1);
 	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 }
 
-<? print $JavaScriptChangeCell; ?>
+<?php print $JavaScriptChangeCell; ?>
  
 </script>
  
@@ -174,9 +174,9 @@ function startUp()
 
 <body onload="startUp()">
 
-<? require ('hysTopLegend.php'); ?>
+<?php require ('hysTopLegend.php'); ?>
 
-<? require ('hysMainNav.php'); ?>
+<?php require ('hysMainNav.php'); ?>
 
 <div class="selectedContent">
 <div id="leftcontent" class="leftcontent">
@@ -184,20 +184,20 @@ function startUp()
 <center>
 <table width=230 class="outerBorderblackSelect" cellspacing=0 cellpadding=0>
 
-<? print $DisplayAuthorizedLinks; ?>
+<?php print $DisplayAuthorizedLinks; ?>
     
 </table>
 </center>
 
 <br><br>
- <? require ('hysNamePhoto.php'); ?>
+ <?php require ('hysNamePhoto.php'); ?>
 </div>
 
 <div align="center" >
 <IFRAME name="mainFrame" src="if_RQstatus.php"  class="rightcontent" scrolling="no" frameborder="0"></IFRAME>
 </div>
 </div>
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

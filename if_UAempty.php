@@ -34,7 +34,7 @@ require ('hysInit.php');
 
 </head>
 
-<body <? print $BodySelectColor ?> >
+<body <?php print $BodySelectColor ?> >
 <div class="detailArea">
 <center>
 <br><br>

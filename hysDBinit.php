@@ -20,14 +20,14 @@ function setHostVariables($HostID, &$host, &$user, &$password)
 			
 		case 3:
 			$host = "localhost";
-			$user = "tarryc";
-			$password = "janetc";
+			$user = "root";
+			$password = "tarryc";
 			break;
 			
 		case 4:
-			$host = "family";
-			$user = "tarryc";
-			$password = "janetc";
+			$host = "localhost";
+			$user = "root";
+			$password = "tarryc";
 			break;	
 	}			
 	

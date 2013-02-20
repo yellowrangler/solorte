@@ -423,9 +423,9 @@ if (isset($_GET[requestid]) and ($_GET[requestid] != ""))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 <!--
@@ -651,7 +651,7 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="RQuprequest.php" name="uprequest"  method=post onsubmit="return formCheck(this);">
@@ -668,47 +668,47 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=25>Status:&nbsp;</td>
 		<td align=left colspan=1>
 			<select name="status"> 
-				<option class="smallTxtGry" value="<? print $result_array[rsID]; ?>"><? print $result_array[Description]; ?>
-				<? print $DisplayRequestStatusList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[rsID]; ?>"><?php print $result_array[Description]; ?>
+				<?php print $DisplayRequestStatusList; ?>
 			</select>
 		</td>
 		
 		<td align=right height=25>Request ID:</td>
-		<td align=left><input <? print $readonly; ?> size=10 maxlength=10 type="text" name="requestid" value="<? print $result_array[crID]; ?>"> </td>
+		<td align=left><input <?php print $readonly; ?> size=10 maxlength=10 type="text" name="requestid" value="<?php print $result_array[crID]; ?>"> </td>
 	
 	</tr>	
 	<tr>
 		<td align=right height=25>Request Date:</td>
 		<td align=left> 
-			<input <? print $readonly; ?> size=2 type="text" name="reqmonth" value="<? print $DisplayRequestMonth; ?>">/
-			<input <? print $readonly; ?> size=2 type="text" name="reqday" value="<? print $DisplayRequestDay; ?>">/
-			<input <? print $readonly; ?> size=4 type="text" name="reqyear" value="<? print $DisplayRequestYear; ?>">
+			<input <?php print $readonly; ?> size=2 type="text" name="reqmonth" value="<?php print $DisplayRequestMonth; ?>">/
+			<input <?php print $readonly; ?> size=2 type="text" name="reqday" value="<?php print $DisplayRequestDay; ?>">/
+			<input <?php print $readonly; ?> size=4 type="text" name="reqyear" value="<?php print $DisplayRequestYear; ?>">
 		</td>
 	
 		<td align=right height=25>Request Time:</td>
 		<td align=left>
-			<input <? print $readonly; ?> size=2 type="text" name="reqhour" value="<? print $DisplayRequestHour; ?>">:
-			<input <? print $readonly; ?> size=2 type="text" name="reqmin" value="<? print $DisplayRequestMin; ?>">&nbsp;  
-			<input <? print $readonly; ?> size=2 type="text" name="reqampm" value="<? print $DisplayRequestAMPM; ?>">
+			<input <?php print $readonly; ?> size=2 type="text" name="reqhour" value="<?php print $DisplayRequestHour; ?>">:
+			<input <?php print $readonly; ?> size=2 type="text" name="reqmin" value="<?php print $DisplayRequestMin; ?>">&nbsp;  
+			<input <?php print $readonly; ?> size=2 type="text" name="reqampm" value="<?php print $DisplayRequestAMPM; ?>">
 		</td>
 	</tr>
 
 	<tr>
 		<td align=right height=25>Service Date:</td>
 		<td align=left colspan=3>
-			<input class="SmTxt" size=2 type="text" name="sermonth" value="<? print $DisplayServiceMonth; ?>">/
-			<input class="SmTxt" size=2 type="text" name="serday" value="<? print $DisplayServiceDay; ?>">/
-			<input class="SmTxt" size=4 type="text" name="seryear" value="<? print $DisplayServiceYear; ?>"> (MM/DD/YYYY)
+			<input class="SmTxt" size=2 type="text" name="sermonth" value="<?php print $DisplayServiceMonth; ?>">/
+			<input class="SmTxt" size=2 type="text" name="serday" value="<?php print $DisplayServiceDay; ?>">/
+			<input class="SmTxt" size=4 type="text" name="seryear" value="<?php print $DisplayServiceYear; ?>"> (MM/DD/YYYY)
 		</td>
 	</tr>
 	
 	<tr>
 		<td align=right height=25>Service Time:</td>
 		<td align=left colspan=3>
-			<input class="SmTxt" size=2 type="text" name="serhour" value="<? print $DisplayServiceHour; ?>">:
-			<input class="SmTxt" size=2 type="text" name="sermin" value="<? print $DisplayServiceMin; ?>">&nbsp;  
+			<input class="SmTxt" size=2 type="text" name="serhour" value="<?php print $DisplayServiceHour; ?>">:
+			<input class="SmTxt" size=2 type="text" name="sermin" value="<?php print $DisplayServiceMin; ?>">&nbsp;  
 			<SELECT name="serampm"> 
-				<option value="<? print $DisplayServiceAMPM; ?>"><? print $DisplayServiceAMPM; ?>
+				<option value="<?php print $DisplayServiceAMPM; ?>"><?php print $DisplayServiceAMPM; ?>
 				<OPTION value="AM">AM 
 				<OPTION value="PM">PM
 			</SELECT> (HH:MM AM or PM)
@@ -719,8 +719,8 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=25>Type:</td>
 		<td align=left colspan=4>
 			<select name="eventtype"> 
-				<option class="smallTxtGry" value="<? print $result_array[EventTypeID]; ?>"><? print $result_array[EventType]; ?> 
-				<? print $DisplayEventTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[EventTypeID]; ?>"><?php print $result_array[EventType]; ?> 
+				<?php print $DisplayEventTypeList; ?>
 			</select>
 		</td>
 	</tr>
@@ -728,36 +728,36 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=25>Provider:</td>
 		<td align=left>
 			<select name="provider"> 
-				<option class="smallTxtGry" value="<? print $result_array[ProviderID]; ?>"><? print $result_array[FirstName]." ".$result_array[LastName]." ".$result_array[Suffix]; ?>
-				<? print $DisplayProviderList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[ProviderID]; ?>"><?php print $result_array[FirstName]." ".$result_array[LastName]." ".$result_array[Suffix]; ?>
+				<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 	
 		<td align=right height=25>Location:</td>
 		<td align=left>
 			<select name="location"> 
-				<option class="smallTxtGry" value="<? print $result_array[CEHostID]; ?>"><? print $result_array[Name]; ?> 
-				<? print $DisplayHostList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[CEHostID]; ?>"><?php print $result_array[Name]; ?> 
+				<?php print $DisplayHostList; ?>
 			</select>
 		</td>
 	</tr> 
 	
 	<tr>
 		<td align=right height=25>ICD:</td>
-		<td align=left><input class="SmTxt" size=15 maxlength=25 type="text" name="icd" value="<? print $result_array[ICD9Code]; ?>"> </td>
+		<td align=left><input class="SmTxt" size=15 maxlength=25 type="text" name="icd" value="<?php print $result_array[ICD9Code]; ?>"> </td>
 	
 		<td align=right height=25>Diagnosis:</td>
-		<td align=left><input class="SmTxt" size=30 maxlength=255 type="text" name="diag" value="<? print $result_array[ICD9Text]; ?>"> </td>
+		<td align=left><input class="SmTxt" size=30 maxlength=255 type="text" name="diag" value="<?php print $result_array[ICD9Text]; ?>"> </td>
 	</tr>
 	
 	<tr >
 		<td align=right height=25>Description:&nbsp;</td>
-		<td align=left colspan=4><input class="SmTxt" size=60 maxlength=255 type="text" name="desc" value="<? print $result_array[Request]; ?>"> </td>
+		<td align=left colspan=4><input class="SmTxt" size=60 maxlength=255 type="text" name="desc" value="<?php print $result_array[Request]; ?>"> </td>
 	</tr>
 	
 	<tr >
 		<td align=right height=25>Service Comments:&nbsp;</td>
-		<td align=left colspan=4><input class="SmTxt" size=60 maxlength=255 type="text" name="comments" value="<? print $result_array[Comments]; ?>"> </td>
+		<td align=left colspan=4><input class="SmTxt" size=60 maxlength=255 type="text" name="comments" value="<?php print $result_array[Comments]; ?>"> </td>
 	</tr>
 
 	<tr>
@@ -795,7 +795,7 @@ function fieldCheck(strValue, strEdit)
 	<tr>	
 		<td class="SmTxt" width=10>&nbsp;</td>
 		<td class="SmTxt" height=15 valign=center align=right>Scanned Document to Upload:</td>
-		<td class="SmTxt" height=15 valign=center align=left><input size=50 type="file" <? print $DisplayReadOnly; ?>  name="fileupload"></td>
+		<td class="SmTxt" height=15 valign=center align=left><input size=50 type="file" <?php print $DisplayReadOnly; ?>  name="fileupload"></td>
 		<td class="SmTxt" width=10>&nbsp;</td>
 	</tr>
 	
@@ -803,8 +803,8 @@ function fieldCheck(strValue, strEdit)
 		<td class="SmTxt" width=10>&nbsp;</td>
 		<td class="SmTxt" height=15 valign=center align=right>Description:&nbsp;</td>
 		<td class="SmTxt" height=15 valign=center align=left>
-			<input <? print $DisplayReadOnly; ?> size=50 maxlength=255 type="text" name="desc" value="">
-			<input <? print $DisplayReadOnly; ?> type=<? print $DisplaySubmitButton; ?> size=150 NAME="SUBMIT"  VALUE="Send File">
+			<input <?php print $DisplayReadOnly; ?> size=50 maxlength=255 type="text" name="desc" value="">
+			<input <?php print $DisplayReadOnly; ?> type=<?php print $DisplaySubmitButton; ?> size=150 NAME="SUBMIT"  VALUE="Send File">
 		</td>
 		<td class="SmTxt">&nbsp;</td>
 	</tr>
@@ -812,16 +812,16 @@ function fieldCheck(strValue, strEdit)
 		<td width=10>&nbsp;</td>
 		<td height=15 valign=center align=right>Scan Type:</td>
 		<td align=left>
-			<select name="scantype" <? print $DisplayReadOnly; ?>> 
-				<option class="smallTxtGry" value="<? print $result_array[ScanTypeID]; ?>"><? print $result_array[ScanType]; ?> 
-				<? print $DisplayScanTypeList; ?>
+			<select name="scantype" <?php print $DisplayReadOnly; ?>> 
+				<option class="smallTxtGry" value="<?php print $result_array[ScanTypeID]; ?>"><?php print $result_array[ScanType]; ?> 
+				<?php print $DisplayScanTypeList; ?>
 			</select>
 		</td>
 		<td>&nbsp;</td>
 	</tr>
 </table>
-<input type="hidden" name="eventid" value="<? print $result_array[ClientEventID]; ?>">
-<input type="hidden" name="requestid" value="<? print $result_array[crID]; ?>">
+<input type="hidden" name="eventid" value="<?php print $result_array[ClientEventID]; ?>">
+<input type="hidden" name="requestid" value="<?php print $result_array[crID]; ?>">
 </form>
 </div>
 
@@ -831,14 +831,14 @@ function fieldCheck(strValue, strEdit)
 		<td width="100%" align=center height=15 colspan=3>Scanned Documents</td>
 	</tr>	
 	<tr>
-		<td width="35%" align="center" height=15><a href="if_UAmedhistscanlist.php?eventid=<? print $result_array[ClientEventID] ?>&order=type"  class="linkTitletype" target="scanFramelist">Type</a></td>
-		<td width="40%" align="center"><a href="if_UAmedhistscanlist.php?eventid=<? print $result_array[ClientEventID] ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description</a></td>
+		<td width="35%" align="center" height=15><a href="if_UAmedhistscanlist.php?eventid=<?php print $result_array[ClientEventID] ?>&order=type"  class="linkTitletype" target="scanFramelist">Type</a></td>
+		<td width="40%" align="center"><a href="if_UAmedhistscanlist.php?eventid=<?php print $result_array[ClientEventID] ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description</a></td>
 		<td width="25%" align="center">Image</td>
 	</tr>
 </table>
 </div>
 
-<IFRAME name="scanFramelist" src="if_RQupscanlist.php?eventid=<? print $result_array[ClientEventID]; ?>" class="innerScanlistframe" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="scanFramelist" src="if_RQupscanlist.php?eventid=<?php print $result_array[ClientEventID]; ?>" class="innerScanlistframe" scrolling=auto frameborder=0> </IFRAME>
 
 </body>
 </html>

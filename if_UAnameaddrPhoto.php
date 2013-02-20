@@ -127,9 +127,9 @@ $result_array = mysql_fetch_assoc($sql_result);
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -270,7 +270,7 @@ function fieldCheck(strValue, strEdit)
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="detailBody">
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>

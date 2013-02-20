@@ -455,9 +455,9 @@ else
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -668,21 +668,21 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="tablePosclientaccesslist">
 <table width="100%" height=20 class="outerBorderTitleGreenLetterSpace">
 	<tr>
 		 <td width="5%" align="center">&nbsp;</td>
 		 <td width="5%" align="center">&nbsp;</td>
-		 <td width="25%" align="center"><a href="if_UAaccessprivlist.php?order=atype&medpal=<? print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Type</a></td>
+		 <td width="25%" align="center"><a href="if_UAaccessprivlist.php?order=atype&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Type</a></td>
 		 <td width="25%" align="center">Name</a></td>
-		 <td width="20%" align="center"><a href="if_UAaccessprivlist.php?order=alevel&medpal=<? print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Level</a></td>
-		 <td width="20%" align="center"><a href="if_UAaccessprivlist.php?order=arelation&medpal=<? print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Relation</a></td>
+		 <td width="20%" align="center"><a href="if_UAaccessprivlist.php?order=alevel&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Level</a></td>
+		 <td width="20%" align="center"><a href="if_UAaccessprivlist.php?order=arelation&medpal=<?php print $Medpal; ?>" class="linkTitletype" target="proxylistaccessFrame">Relation</a></td>
 	</tr>	
 </table>
 </div>
-<IFRAME name="proxylistaccessFrame" src="if_UAaccessprivlist.php?medpal=<? print $Medpal; ?>"  class="innerframeproxyaccesslist" scrolling=yes></IFRAME>
+<IFRAME name="proxylistaccessFrame" src="if_UAaccessprivlist.php?medpal=<?php print $Medpal; ?>"  class="innerframeproxyaccesslist" scrolling=yes></IFRAME>
 
 
 
@@ -699,34 +699,34 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=right height=35>Proxy Name:</td>
-		<td align=left><input class="readonlyText" readonly size=35 maxlength=35 type="text" name="clientname" value="<? print $DisplayName; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=35 maxlength=35 type="text" name="clientname" value="<?php print $DisplayName; ?>"></td>
 	</tr>
 	<tr>		
 		<td height=35 align=right>Affiliation:</td>
-		<td align=left><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="affiliation" value="<? print $DisplayAffiliation;  ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="affiliation" value="<?php print $DisplayAffiliation;  ?>"></td>
 	</tr>
 	<tr>
 		<td align=right>Address:</td>
-		<td align=left ><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<? print $result_array[AddrLine1]; ?>"></td>
+		<td align=left ><input class="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<?php print $result_array[AddrLine1]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>City:</td>
-		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<? print $result_array[City]; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<?php print $result_array[City]; ?>"></td>
 	</tr>
 	<tr>	
 		<td align=right>State:</td>
-		<td align=left><input class="readonlyText" readonly size=2 maxlength=2 type="text" name="state" value="<? print $result_array[State]; ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=2 maxlength=2 type="text" name="state" value="<?php print $result_array[State]; ?>"></td>
 	</tr>
 		<tr>		
 		<td height=35 align=right>Zip:</td>
-		<td align=left><input class="readonlyText" readonly size=10 maxlength=10 type="text" name="zip" value="<? print $result_array[Zip];  ?>"></td>
+		<td align=left><input class="readonlyText" readonly size=10 maxlength=10 type="text" name="zip" value="<?php print $result_array[Zip];  ?>"></td>
 	</tr>
 	<tr>
 		<td height=35 align=right>Relationship:</td>
 		<td align=left>
 			<select name="proxyrelationship"> 
-				<option class="smallTxtGry" value="<? print $DisplayRelationshipValue; ?>"><? print $DisplayRelationship; ?> 
-				<? print $DisplayRelationshipTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayRelationshipValue; ?>"><?php print $DisplayRelationship; ?> 
+				<?php print $DisplayRelationshipTypeList; ?>
 			</select>
 		</td>
 	</tr>
@@ -734,20 +734,20 @@ function fieldCheck(strValue, strEdit)
 		<td height=35 align=right>Level:</td>
 		<td align=left>
 			<select name="level"> 
-				<option class="smallTxtGry" value="<? print $DisplayLevelValue; ?>"><? print $DisplayLevel; ?> 
-				<? print $DisplayAuthorizationLevelTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayLevelValue; ?>"><?php print $DisplayLevel; ?> 
+				<?php print $DisplayAuthorizationLevelTypeList; ?>
 			</select>
 		</td>	
 	</tr>
 </table>	
-<input type="hidden" name="proxyuserid" value="<? print $ProxyUserID; ?>">
-<input type="hidden" name="medpal" value="<? print $Medpal; ?>">
-<input type="hidden" name="proxytype" value="<? print $ProxyType; ?>">
+<input type="hidden" name="proxyuserid" value="<?php print $ProxyUserID; ?>">
+<input type="hidden" name="medpal" value="<?php print $Medpal; ?>">
+<input type="hidden" name="proxytype" value="<?php print $ProxyType; ?>">
 <input type="hidden" name="Action" value="update">
 <br><center>
 <table>
 	<tr>
-		<td align=center><input <? print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Update"></td>
+		<td align=center><input <?php print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Update"></td>
 	</tr>
 </table>	
 </center>	

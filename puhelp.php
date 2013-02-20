@@ -142,7 +142,7 @@ else
 
 <br><br>
 
-<? print $DisplayBlock; ?>
+<?php print $DisplayBlock; ?>
 
 </div>
 

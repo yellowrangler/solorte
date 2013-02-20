@@ -128,9 +128,9 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -140,7 +140,7 @@ function startUp()
 <div>
 <br>
 <table width="100%" class="tblDetailsmTextOff">
-	<? print $DisplayBlock; ?>
+	<?php print $DisplayBlock; ?>
 </table>
 
 </div>

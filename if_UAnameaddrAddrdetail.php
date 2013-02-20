@@ -141,9 +141,9 @@ if ( isset($_GET[addrid]) and ($_GET[addrid] != "") )
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -284,7 +284,7 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailformPos">
 <form  action="UAnameaddrAddr.php" method=post onsubmit="return formCheck(this);">
@@ -299,28 +299,28 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr valign=top>
 		<td align=right height=35>Address Line 1:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<? print $result_array[AddrLine1]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<?php print $result_array[AddrLine1]; ?>"> </td>
 	</tr>
 	<tr valign=top>
 		<td align=right height=35>Address Line 2:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<? print $result_array[AddrLine2]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<?php print $result_array[AddrLine2]; ?>"> </td>
 	</tr>
 	<tr valign=top>
 		<td align=right height=35>City:</td>
-		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<? print $result_array[City]; ?>"> </td>
+		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<?php print $result_array[City]; ?>"> </td>
 
 		<td align=right height=35>State:</td>
-		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<? print $result_array[State]; ?>"> </td>
+		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<?php print $result_array[State]; ?>"> </td>
 		
 		<td align=right height=35>Zip Code:</td>
-		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<? print $result_array[ZIP]; ?>"> </td>
+		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<?php print $result_array[ZIP]; ?>"> </td>
 	</tr>
 	<tr valign=top>
 		<td align=right height=35>Order:</td>
-		<td align=left><input size=2 maxlength=3 type="text" name="order" value="<? print $result_array[OrderID]; ?>"> </td>
+		<td align=left><input size=2 maxlength=3 type="text" name="order" value="<?php print $result_array[OrderID]; ?>"> </td>
 		
 		<td align=right height=35>Phone Number:</td>
-		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="phonenbr" value="<? print $result_array[PhoneNbr]; ?>"> </td>
+		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="phonenbr" value="<?php print $result_array[PhoneNbr]; ?>"> </td>
 	</tr>
 </table>
 <center>
@@ -338,7 +338,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 </table>
 </center>	
-<input type='hidden' name='addrid'  value='<? print $Displayaddrid; ?>'>
+<input type='hidden' name='addrid'  value='<?php print $Displayaddrid; ?>'>
 </form>
 </div>
 

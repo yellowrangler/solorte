@@ -160,13 +160,13 @@ $readonly = "class =\"readonlyText\" readonly";
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="primaryContactArea">
 <form  method=post>
 <table width="100%" class="outerBorderMessageTitleBlue">
@@ -185,11 +185,11 @@ function startUp()
 		<td align=center><b>Suffix</b></td>
 	</tr>	
 	<tr>
-		<td align=center><input <? print $readonly; ?> size=3 maxlength=5 type="text" name="prefix" value="<? print $Prefix[1]; ?>"></td>
-		<td align=center><input <? print $readonly; ?> size=15 maxlength=45 type="text" name="firstname" value="<? print $FirstName[1]; ?>"></td>
-		<td align=center><input <? print $readonly; ?> size=1 maxlength=1 type="text" name="mi" value="<? print $MI[1]; ?>"></td>
-		<td align=center><input <? print $readonly; ?> size=15 maxlength=45 type="text" name="lastname" value="<? print $LastName[1]; ?>"></td>
-		<td align=center><input <? print $readonly; ?> size=3 maxlength=5 type="text" name="suffix" value="<? print $Suffix[1]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?> size=3 maxlength=5 type="text" name="prefix" value="<?php print $Prefix[1]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?> size=15 maxlength=45 type="text" name="firstname" value="<?php print $FirstName[1]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?> size=1 maxlength=1 type="text" name="mi" value="<?php print $MI[1]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?> size=15 maxlength=45 type="text" name="lastname" value="<?php print $LastName[1]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?> size=3 maxlength=5 type="text" name="suffix" value="<?php print $Suffix[1]; ?>"></td>
 	</tr>	 
 </table>
 
@@ -198,36 +198,36 @@ function startUp()
 <table width="100%" class="tblDetailsmTextOff">
 	<tr>
 		<td  height=30 align=right>Address:</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?> size=20 maxlength=255 type="text" name="addr1" value="<? print $AddrL1[1]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?> size=20 maxlength=255 type="text" name="addr1" value="<?php print $AddrL1[1]; ?>"></td>
 	</tr> 
 	
 		<tr>
 		<td  height=30 align=right>&nbsp;</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?> size=20 maxlength=255 type="text" name="addr2" value="<? print $AddrL2[1]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?> size=20 maxlength=255 type="text" name="addr2" value="<?php print $AddrL2[1]; ?>"></td>
 	</tr> 
 	
 	<tr>
 		<td align=right>City:</td>
-		<td  height=30 align=left><input <? print $readonly; ?> size=15 maxlength=45 type="text" name="city" value="<? print $City[1]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?> size=15 maxlength=45 type="text" name="city" value="<?php print $City[1]; ?>"></td>
 		
 		<td align=right>State:</td>
-		<td  height=30 align=left><input <? print $readonly; ?> size=2 maxlength=2 type="text" name="state" value="<? print $State[1]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?> size=2 maxlength=2 type="text" name="state" value="<?php print $State[1]; ?>"></td>
 		
 		<td align=right>ZIP:</td>
-		<td  height=30 align=left><input <? print $readonly; ?> size=5 maxlength=10 type="text" name="zip" value="<? print $ZIP[1]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?> size=5 maxlength=10 type="text" name="zip" value="<?php print $ZIP[1]; ?>"></td>
 	</tr>
 	
 	<tr>
 		<td height=30 align=right>Relationship:</td>
-		<td align=left colspan=2><input <? print $readonly; ?> size=20 maxlength=45 type="text" name="relations" value="<? print $Relationship[1]; ?>"></td>
+		<td align=left colspan=2><input <?php print $readonly; ?> size=20 maxlength=45 type="text" name="relations" value="<?php print $Relationship[1]; ?>"></td>
 	</tr>
 	
 	<tr>
 		<td align=right>Phone Nbr:</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?> size=15 maxlength=15 type="text" name="phonenbr" value="<? print $PhoneNbr[1]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?> size=15 maxlength=15 type="text" name="phonenbr" value="<?php print $PhoneNbr[1]; ?>"></td>
 		
 		<td align=right>Mobile Nbr:</td>
-		<td  height=30 align=lef colspan=2><input <? print $readonly; ?> size=15 maxlength=15 type="text" name="mobilenbr" value="<? print $MobileNbr[1]; ?>"></td>
+		<td  height=30 align=lef colspan=2><input <?php print $readonly; ?> size=15 maxlength=15 type="text" name="mobilenbr" value="<?php print $MobileNbr[1]; ?>"></td>
 	</tr>
 
 </table>
@@ -252,11 +252,11 @@ function startUp()
 		<td align=center><b>Suffix</b></td>
 	</tr>	
 	<tr>
-		<td align=center><input <? print $readonly; ?>  size=3 maxlength=5 type="text" name="prefix" value="<? print $Prefix[2]; ?>"></td>
-		<td align=center><input <? print $readonly; ?>  size=15 maxlength=45 type="text" name="firstname" value="<? print $FirstName[2]; ?>"></td>
-		<td align=center><input <? print $readonly; ?>  size=1 maxlength=1 type="text" name="mi" value="<? print $MI[2]; ?>"></td>
-		<td align=center><input <? print $readonly; ?>  size=15 maxlength=45 type="text" name="lastname" value="<? print $LastName[2]; ?>"></td>
-		<td align=center><input <? print $readonly; ?>  size=3 maxlength=5 type="text" name="suffix" value="<? print $Suffix[2]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?>  size=3 maxlength=5 type="text" name="prefix" value="<?php print $Prefix[2]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?>  size=15 maxlength=45 type="text" name="firstname" value="<?php print $FirstName[2]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?>  size=1 maxlength=1 type="text" name="mi" value="<?php print $MI[2]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?>  size=15 maxlength=45 type="text" name="lastname" value="<?php print $LastName[2]; ?>"></td>
+		<td align=center><input <?php print $readonly; ?>  size=3 maxlength=5 type="text" name="suffix" value="<?php print $Suffix[2]; ?>"></td>
 	</tr>	 
 </table>
 
@@ -265,36 +265,36 @@ function startUp()
 <table width="100%" class="tblDetailsmTextOff">
 	<tr>
 		<td  height=30 align=right>Address:</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?>  size=20 maxlength=255 type="text" name="addr1" value="<? print $AddrL1[2]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?>  size=20 maxlength=255 type="text" name="addr1" value="<?php print $AddrL1[2]; ?>"></td>
 	</tr> 
 	
 	<tr>
 		<td  height=30 align=right>&nbsp;</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?>  size=20 maxlength=255 type="text" name="addr2" value="<? print $AddrL2[2]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?>  size=20 maxlength=255 type="text" name="addr2" value="<?php print $AddrL2[2]; ?>"></td>
 	</tr> 
 	
 	<tr>
 		<td align=right>City:</td>
-		<td  height=30 align=left><input <? print $readonly; ?>  size=15 maxlength=45 type="text" name="city" value="<? print $City[2]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?>  size=15 maxlength=45 type="text" name="city" value="<?php print $City[2]; ?>"></td>
 		
 		<td align=right>State:</td>
-		<td  height=30 align=left><input <? print $readonly; ?>  size=2 maxlength=2 type="text" name="state" value="<? print $State[2]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?>  size=2 maxlength=2 type="text" name="state" value="<?php print $State[2]; ?>"></td>
 		
 		<td align=right>ZIP:</td>
-		<td  height=30 align=left><input <? print $readonly; ?>  size=5 maxlength=10 type="text" name="zip" value="<? print $ZIP[2]; ?>"></td>
+		<td  height=30 align=left><input <?php print $readonly; ?>  size=5 maxlength=10 type="text" name="zip" value="<?php print $ZIP[2]; ?>"></td>
 	</tr>
 	
 	<tr>
 		<td height=30 align=right>Relationship:</td>
-		<td align=left colspan=2><input <? print $readonly; ?> size=20 maxlength=45 type="text" name="relations" value="<? print $Relationship[2]; ?>"></td>
+		<td align=left colspan=2><input <?php print $readonly; ?> size=20 maxlength=45 type="text" name="relations" value="<?php print $Relationship[2]; ?>"></td>
 	</tr>
 	
 	<tr>
 		<td align=right>Phone Nbr:</td>
-		<td  height=30 align=left colspan=2><input <? print $readonly; ?>  size=15 maxlength=15 type="text" name="phonenbr" value="<? print $PhoneNbr[2]; ?>"></td>
+		<td  height=30 align=left colspan=2><input <?php print $readonly; ?>  size=15 maxlength=15 type="text" name="phonenbr" value="<?php print $PhoneNbr[2]; ?>"></td>
 		
 		<td align=right>Mobile Nbr:</td>
-		<td  height=30 align=lef colspan=2><input <? print $readonly; ?>  size=15 maxlength=15 type="text" name="mobilenbr" value="<? print $MobileNbr[2]; ?>"></td>
+		<td  height=30 align=lef colspan=2><input <?php print $readonly; ?>  size=15 maxlength=15 type="text" name="mobilenbr" value="<?php print $MobileNbr[2]; ?>"></td>
 	</tr>
 
 </table>

@@ -245,14 +245,14 @@ while($resultActionArray = mysql_fetch_assoc($sql_Action_result))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="UArules.php" method=post>
@@ -262,7 +262,7 @@ function startUp()
 	</tr>	
 </table>
 <table width="100%" class="tblDetailsmTextOff">
-	<? print $DisplayBlock; ?>
+	<?php print $DisplayBlock; ?>
 </table>	
 
 <br><center>

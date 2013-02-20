@@ -266,9 +266,9 @@ if ( isset($_GET[prescid]) and ($_GET[prescid] != "") )
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -415,7 +415,7 @@ function fieldCheck(strValue, strEdit)
   
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div name="detailArea" class="detailArea">
 <form  action="UApresc.php" method=post onsubmit="return formCheck(this);">
@@ -431,56 +431,56 @@ function fieldCheck(strValue, strEdit)
 	<tr>
 		<td align=right height=35>Start Date:</td>
 		<td align=left>
-			<input size=2 type="text" name="prescstartmonth" value="<? print $DisplayStartMonth; ?>">/
-			<input size=2 type="text" name="prescstartday" value="<? print $DisplayStartDay; ?>">/
-			<input size=4 type="text" name="prescstartyear" value="<? print $DisplayStartYear; ?>"> (MM/DD/YYYY)
+			<input size=2 type="text" name="prescstartmonth" value="<?php print $DisplayStartMonth; ?>">/
+			<input size=2 type="text" name="prescstartday" value="<?php print $DisplayStartDay; ?>">/
+			<input size=4 type="text" name="prescstartyear" value="<?php print $DisplayStartYear; ?>"> (MM/DD/YYYY)
 		</td>
 		<td align=right height=35>Renew Date:</td>
 		<td align=left>
-			<input size=2 type="text" name="prescendmonth" value="<? print $DisplayEndMonth; ?>">/
-			<input size=2 type="text" name="prescendday" value="<? print $DisplayEndDay; ?>">/
-			<input size=4 type="text" name="prescendyear" value="<? print $DisplayEndYear; ?>"> (MM/DD/YYYY)
+			<input size=2 type="text" name="prescendmonth" value="<?php print $DisplayEndMonth; ?>">/
+			<input size=2 type="text" name="prescendday" value="<?php print $DisplayEndDay; ?>">/
+			<input size=4 type="text" name="prescendyear" value="<?php print $DisplayEndYear; ?>"> (MM/DD/YYYY)
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Provider:</td>
 		<td align=left>
-			<select name="prescprovider"> <option class="smallTxtGry" value="<? print $DisplayProviderID; ?>"><? print $DisplayProvider; ?> 
-			<? print $DisplayProviderList; ?>
+			<select name="prescprovider"> <option class="smallTxtGry" value="<?php print $DisplayProviderID; ?>"><?php print $DisplayProvider; ?> 
+			<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 		<td align=right height=35>Condition:</td>
-		<td align=left><input size=30 maxlength=255 type="text" name="prescconditionc" value="<? print $DisplayCondition; ?>"> </td>
+		<td align=left><input size=30 maxlength=255 type="text" name="prescconditionc" value="<?php print $DisplayCondition; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Pharmacy:</td>
 		<td align=left>
 			<select name="prescpharmacy"> 
-				<option class="smallTxtGry" value="<? print $DisplayPharmacyID; ?>"><? print $DisplayPharmacy; ?> 
-				<? print $DisplayPharmacyList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayPharmacyID; ?>"><?php print $DisplayPharmacy; ?> 
+				<?php print $DisplayPharmacyList; ?>
 			</select>
 		</td>
 		<td align=right height=35>Precription Nbr:</td>
-		<td align=left><input size=20 maxlength=40 type="text" name="prescnbr" value="<? print $DisplayNbr; ?>"> </td>
+		<td align=left><input size=20 maxlength=40 type="text" name="prescnbr" value="<?php print $DisplayNbr; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Medication:</td>
-		<td align=left colspan=3><input size=45 maxlength=255 type="text" name="prescmedication" value="<? print $DisplayMedication; ?>"> </td>
+		<td align=left colspan=3><input size=45 maxlength=255 type="text" name="prescmedication" value="<?php print $DisplayMedication; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Unit Size:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="prescunitsz" value="<? print $DisplayUnitSz; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="prescunitsz" value="<?php print $DisplayUnitSz; ?>"> </td>
 
 		<td align=right height=35>Quantity:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="prescqty" value="<? print $DisplayQty; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="prescqty" value="<?php print $DisplayQty; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Dosage:</td>
-		<td align=left colspan=3><input size=25 maxlength=45 type="text" name="prescdosage" value="<? print $DisplayDosage; ?>"> </td>
+		<td align=left colspan=3><input size=25 maxlength=45 type="text" name="prescdosage" value="<?php print $DisplayDosage; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Directions:</td>
-		<td align=left colspan=3><input size=70 maxlength=255 type="text" name="prescdirections" value="<? print $DisplayDirections; ?>"> </td>
+		<td align=left colspan=3><input size=70 maxlength=255 type="text" name="prescdirections" value="<?php print $DisplayDirections; ?>"> </td>
 	</tr>
 </table>	
 <center>
@@ -498,7 +498,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 </table>
 </center>
-<input type='hidden' name='prescid'  value='<? print $DisplayPrescID; ?>'>
+<input type='hidden' name='prescid'  value='<?php print $DisplayPrescID; ?>'>
 </form>
 </div>
 </div>

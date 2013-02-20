@@ -187,7 +187,7 @@ $DisplayBlock .= "\t<tr><td>&nbsp;</td></tr>\n</table>\n";
 
 <br><br>
 
-<? print $DisplayBlock; ?>
+<?php print $DisplayBlock; ?>
  	
 </div>
 

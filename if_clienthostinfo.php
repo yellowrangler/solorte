@@ -170,20 +170,20 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="hostdetailBody">
 <form  action="clienthost.php" target="clienthostmainFrame" method=post>
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
-		 <td height=20 align="center"><? print $displayTitle; ?></td>
+		 <td height=20 align="center"><?php print $displayTitle; ?></td>
 	</tr>	
 </table>
 
@@ -193,32 +193,32 @@ function startUp()
 	</tr>
 	<tr>
 		<td align=right height=35>Host Name:</td>
-		<td align=left><input class ="readonlyText" readonly size=35 maxlength=35 type="text" name="hostname" value="<? print $result_array[Name]; ?>"></td>
+		<td align=left><input class ="readonlyText" readonly size=35 maxlength=35 type="text" name="hostname" value="<?php print $result_array[Name]; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right>Host Type:</td>
-		<td align=left><input class ="readonlyText" readonly size=25 maxlength=25 type="text" name="specialtytype" value="<? print $result_array[HostTypeDesc]; ?>"></td>
+		<td align=left><input class ="readonlyText" readonly size=25 maxlength=25 type="text" name="specialtytype" value="<?php print $result_array[HostTypeDesc]; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right>Address:</td>
-		<td align=left><input class ="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<? print $result_array[AddrLine1]; ?>"></td>
+		<td align=left><input class ="readonlyText" readonly size=40 maxlength=40 type="text" name="address" value="<?php print $result_array[AddrLine1]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>City:</td>
-		<td align=left><input class ="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<? print $result_array[City]; ?>"></td>
+		<td align=left><input class ="readonlyText" readonly size=15 maxlength=15 type="text" name="city" value="<?php print $result_array[City]; ?>"></td>
 	</tr>
 	<tr>		
 		<td align=right>State:</td>
-		<td align=left><input class ="readonlyText" readonly size=2 maxlength=2 type="text" name="city" value="<? print $result_array[State]; ?>"></td>
+		<td align=left><input class ="readonlyText" readonly size=2 maxlength=2 type="text" name="city" value="<?php print $result_array[State]; ?>"></td>
 	</tr>
 </table>
-<input type="hidden" name="hostid" value="<? print $result_array[hostID]; ?>">	
-<input type="hidden" name="clientid" value="<? print $ClientID; ?>">	
+<input type="hidden" name="hostid" value="<?php print $result_array[hostID]; ?>">	
+<input type="hidden" name="clientid" value="<?php print $ClientID; ?>">	
 <input type="hidden" name="Action" value="add">	
 <br><center>
 <table>
 	<tr>
-		<td align=center><input <? print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
+		<td align=center><input <?php print $ButtonHidden; ?> type=submit size=150 NAME="SUBMIT" VALUE="Add"></td>
 	</tr>
 </table>	
 </center>	
@@ -232,7 +232,7 @@ function startUp()
 	</tr>	
 </table>
 
-<IFRAME name="remorderClientHostFrame" src="if_clienthostremorder.php?clientid=<? print $ClientID; ?>"  target="clienthostmainFrame" class="innerremorderClientHostList" scrolling="yes"></IFRAME>
+<IFRAME name="remorderClientHostFrame" src="if_clienthostremorder.php?clientid=<?php print $ClientID; ?>"  target="clienthostmainFrame" class="innerremorderClientHostList" scrolling="yes"></IFRAME>
 </div>
 </body>
 </html>

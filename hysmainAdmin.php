@@ -105,7 +105,7 @@ function currDate()
 <div name="dateLine" class="dateLine">
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><? print currDate(); ?></t
+    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><?php print currDate(); ?></t
   </tr>
 </table>
 </div>  

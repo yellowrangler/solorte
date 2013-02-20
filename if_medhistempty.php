@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/hysstyle.css" />
 </head>
 
-<body <? print $BodySelectColor ?> >
+<body <?php print $BodySelectColor ?> >
 <br><br><br>
 <center>
 <b>Medical History Detail wil be displayed here.</b>

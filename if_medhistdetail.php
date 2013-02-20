@@ -253,18 +253,18 @@ $readonlyURL = "class =\"readonlyURLText\" readonly";
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor; ?> onload="startUp()">
+<body <?php print $BodySelectColor; ?> onload="startUp()">
 
 <div class="historyDetail">
 
-<? print $DisplayBlock; ?>
+<?php print $DisplayBlock; ?>
 
 </div>
 
@@ -274,28 +274,28 @@ function startUp()
 		<td width="25%" align=center height=20>&nbsp;</td>
 		<td width="50%" align=center colspan=2>Scanned Documents</td>
 		<td width="25%" align=center height=20>
-			<a href="if_medhistscanlist.php?eventid=<? print $DisplayEventID ?>&thumbnail=toggle"  class="thumblinkTitletype" target="scanFramelist">Toggle Thumb nails
+			<a href="if_medhistscanlist.php?eventid=<?php print $DisplayEventID ?>&thumbnail=toggle"  class="thumblinkTitletype" target="scanFramelist">Toggle Thumb nails
 			</a>
 		</td>
 	</tr>	
 	<tr>
 		<td width="25%" align="center" height="20">
-			<a href="if_medhistscanlist.php?eventid=<? print $DisplayEventID ?>&order=type"  class="linkTitletype" target="scanFramelist">Type
+			<a href="if_medhistscanlist.php?eventid=<?php print $DisplayEventID ?>&order=type"  class="linkTitletype" target="scanFramelist">Type
 			</a>
 		</td>
 		<td width="25%" align="center">
-			<a href="if_medhistscanlist.php?eventid=<? print $DisplayEventID ?>&order=def"  class="linkTitletype" target="scanFramelist">Define
+			<a href="if_medhistscanlist.php?eventid=<?php print $DisplayEventID ?>&order=def"  class="linkTitletype" target="scanFramelist">Define
 			</a>
 		</td>
 		<td width="35%" align="center">
-			<a href="if_medhistscanlist.php?eventid=<? print $DisplayEventID ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description
+			<a href="if_medhistscanlist.php?eventid=<?php print $DisplayEventID ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description
 			</a>
 		</td>
 		<td width="15%" align="center">Image</td>
 	</tr>	
 </table>
 </div>
-<iframe name="scanFramelist" src="if_medhistscanlist.php?eventid=<? print $DisplayEventID ?>" scrolling=auto frameborder=0 class="innerScanlistframe"> </iframe>
+<iframe name="scanFramelist" src="if_medhistscanlist.php?eventid=<?php print $DisplayEventID ?>" scrolling=auto frameborder=0 class="innerScanlistframe"> </iframe>
 
 </body>
 </html>

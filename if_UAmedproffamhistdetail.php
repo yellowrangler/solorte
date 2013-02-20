@@ -242,16 +242,16 @@ $DisplayBlock .= "
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
 <body onload="startUp()">
 
-<? print $DisplayBlock; ?>
+<?php print $DisplayBlock; ?>
 
 </body>
 </html>

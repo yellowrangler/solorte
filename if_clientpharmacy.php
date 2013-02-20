@@ -19,9 +19,9 @@ require ('hysDBinit.php');
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 
@@ -108,7 +108,7 @@ function startUp()
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="leftPharmacySearch">
 <form name="search" method="post" ACTION="if_clientpharmacylist.php" target="ClientPharmacyListFrame">

@@ -1,0 +1,367 @@
+.banner {
+		position: absolute;
+		left:1px;
+		top:0px;
+		height:30px;
+		width:1000px;
+		border:0px solid black;
+		background:#fff;
+		}
+		
+.mainNav {
+		position: absolute;
+		left:5px;
+		top:32px;
+		height:22px;
+		width:1000px;
+		border:0px solid black;
+		background:#fff;
+		}
+
+.selectedContent {
+		position: absolute;
+		left:5px;
+		top:55px;
+		width:1001px;
+		height:801px;
+		border-top:1px #ccccff;
+		border-right:1px solid black;
+		border-left:1px solid black;
+		border-bottom:1px solid black;
+		background: #ccccff;
+		}
+
+.messageboxTitle {
+		color: white;
+		font: 200 13px Arial,Helvetica;
+		letter-spacing: 8px;
+		text-align:center;
+		line-height: 20px;
+		background: #990000;
+		border:0px solid black;
+		}
+		
+.messageboxArea {
+		position: absolute;
+		left:20px;
+		top:770px; 
+		width:650px;
+		height:20px;
+		background: #ccccff;
+		border:1px solid blue;
+		border-style: inset;
+		}
+		
+.messageboxTextcell   { 
+		font: 200 13px Arial, Geneva;
+		line-height: 20px; 
+		border-top:0px solid black;
+		border-left:0px solid black;
+		border-right:0px solid black;
+		border-bottom:0px solid black;
+		color: black;
+		background: #ccff99;
+		}						
+
+.readonlyText {
+		background: #ccff99;
+		color: black;
+		}	
+
+.readonlyURLText {
+		background: #ccff99;
+		text-decoration: underline;
+		color: black;
+		}	
+		
+.leftcontent {
+		position: absolute;
+		left:0px;
+		top:0px;
+		width:249px;
+		height:799px;
+		border-top:0px #ccccff;
+		border-right:0px #ccccff;
+		border-left:0px #ccccff;
+		border-bottom:0px #ccccff;
+		background: #ccccff;
+		}
+
+.rightcontent {
+		position: absolute;
+		left:256px;
+		top:0px;
+		width:743px;
+		height:799px;
+		background: #ccccff;
+		border-top:0px #ccccff;
+		border-right:0px #ccccff;
+		border-left:0px #ccccff;
+		border-bottom:0px #ccccff;
+		}
+
+.leftLink   { 
+		font: 700 13px Helvetica, Arial,Geneva;
+		color: black; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+				
+.leftLink:hover   { 
+		color: #339900; 
+		color: blue;
+		font: 700 13px Helvetica, Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: underline;
+		}
+		
+.mainNavCell   { 
+		color: white;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		border-top:1px #008080;
+		border-right:1px #008080;
+		border-left:1px #008080;
+		border-bottom:1px solid black;
+		background: #008080;
+		text-decoration: none;
+		}
+
+.mainNavCell:hover   { 
+		color: #ccccff;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #008080;
+		text-decoration: none;
+		}
+
+.mainNavCellAnch   { 
+		color: white;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		border-top:0px solid black;
+		border-right:0px solid black;
+		border-left:0px solid black;
+		border-bottom:0px solid black;
+		background: #008080;
+		text-decoration: none;
+		}
+
+.mainNavCellAnch:hover   { 
+		color: #ccccff;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #008080;
+		text-decoration: none;
+		}		
+		
+.mainNavCellSelect   { 
+		color: #008080;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		border-top:1px solid black;
+		border-right:1px solid black;
+		border-left:1px solid black;
+		border-bottom:1px #ccccff;
+		background: #ccccff;
+		text-decoration: none;
+		}
+		
+.mainNavCellSelect:hover   { 
+		color: red;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #ccccff;
+		text-decoration: none;
+		}		
+
+.mainNavCellSelectAnch   { 
+		color: #008080;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #ccccff;
+		text-decoration: none;
+		}
+		
+.mainNavCellSelectAnch:hover   { 
+		color: red;
+		font: 700 12px Arial, Geneva; 		
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		background: #ccccff;
+		text-decoration: none;
+		}	
+
+.mainNavSpacer   { 
+		color: white;
+		font: 700 12px Arial, Geneva; 
+		line-height: 20px; 
+		text-align: center;
+		vertical-align: middle;
+		border-top:1px white;
+		border-right:0px white;
+		border-left:0px white;
+		border-bottom:1px solid black;
+		background: white;
+		text-decoration: none;
+		}
+				
+.bottomline {
+		position: absolute; 
+		top:875px; 
+		background-color: white;
+		border:1px solid white;
+		}
+
+.topicBorder {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		background: #ccccff;
+		}			
+		
+.topicBorder2 {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		color: black;
+		text-align: center;
+		background: #ccccff;
+		}				
+		
+.outerBorderblackSelect {
+		font: 700 13px Arial, Geneva;
+		border-top:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		border-bottom:1px solid black;
+		border-style: inset;
+		background: #ffffff;
+		}	
+
+.outerBorderblack {
+		font: 700 13px Arial, Geneva;
+		border-top:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		border-bottom:1px solid black;
+		border-style: inset;
+		background: #ffffff;
+		}	
+		
+.outerBorderblackBlack {
+		font: 700 13px Arial, Geneva;
+		border-top:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+		border-bottom:1px solid black;
+		border-style: inset;
+		background: white;
+		}	
+		
+.outerBorderTitleBlueLetterSpace {
+		color: white;
+		font: 700 13px Arial,Helvetica;
+		text-align: center;
+		letter-spacing: 8px;
+		border-top:0px solid #052faf;
+		border-left:1px solid #052faf;
+		border-right:1px solid #052faf;
+		border-bottom:0px solid #052faf;
+		background: #052faf;
+		}		
+
+.headerBorderPos {
+		position: absolute;
+		left:0px;
+		top:20px;
+		}			
+		
+.tblDetailsmTextOn  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:none;
+		background:#CCFFFF;
+		}
+				
+.tblDetailsmTextOff  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		background: white;
+		}		
+
+.headerBorderGold {
+		color:#23708e;
+		font: 700 15px Arial,Helvetica;
+		font-style: italic;
+		border-top:0px solid #d1b60c;
+		border-left:0px solid #d1b60c;
+		border-right:0px solid #d1b60c;
+		border-bottom:1px solid #d1b60c;
+		}		
+.smallTextLegend {
+		font: 700 10px Verdana, Arial, Helvetica;
+		}	
+	
+.smallText {
+		font: 400 10px Verdana, Arial, Helvetica;
+		}
+
+.smallText2 {
+		font: 400 13px Arial, Geneva;
+		line-height: 14px; 
+		}
+
+.smallText2Bold {
+		font: 700  13px Arial, Geneva;
+		line-height: 15px; 
+		}
+		
+.Footnote {
+		font: 100 11px Arial,Helvetica;
+		}
+				
+.tblDetailsmTextLinkOff  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		}
+
+.tblDetailsmTextLinkOff:hover  { 
+		color: blue; 
+		font-size: 13px; 
+		line-height: 20px; 
+		font-family: Arial, Geneva;
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: underline
+		}
+

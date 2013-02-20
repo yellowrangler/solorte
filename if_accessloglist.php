@@ -340,9 +340,9 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -352,7 +352,7 @@ function startUp()
 <div>
 <center>
 <table width="100%" cellspacing=0 cellpadding=0 border=0>
-		<? print $DisplayBlock; ?>
+		<?php print $DisplayBlock; ?>
 </table>
 
 </center>

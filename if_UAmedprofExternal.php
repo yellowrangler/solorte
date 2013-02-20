@@ -115,9 +115,9 @@ $DisplayHeightInches = $tmpHeight[1];
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -261,7 +261,7 @@ function fieldCheck(strValue, strEdit)
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="detailArea">
 <form  action="UAmedprofExternal.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
@@ -276,9 +276,9 @@ function fieldCheck(strValue, strEdit)
 			<table>
 				<tr>
 					<td>
-						<input size=2 maxlength=2 type="text" name="profheightft" value="<? print  $DisplayHeightFT; ?>"> 
+						<input size=2 maxlength=2 type="text" name="profheightft" value="<?php print  $DisplayHeightFT; ?>"> 
 						&nbsp;'
-						<input size=2 maxlength=2 type="text" name="profheightinches" value="<? print  $DisplayHeightInches; ?>">
+						<input size=2 maxlength=2 type="text" name="profheightinches" value="<?php print  $DisplayHeightInches; ?>">
 						&nbsp;&quot;
 					</td>
 				</tr>
@@ -286,48 +286,48 @@ function fieldCheck(strValue, strEdit)
 		</td>
 	
 		<td align=right height=40>Weight:</td>
-		<td align=left><input size=3 maxlength=4 type="text" name="profweight" value="<? print $DisplayWeight; ?>"> Lbs </td>
+		<td align=left><input size=3 maxlength=4 type="text" name="profweight" value="<?php print $DisplayWeight; ?>"> Lbs </td>
 	</tr>
 	
 	<tr>
 		<td align=right height=40>Sex:</td>
 		<td align=left>
-			<select name="profsex"> <option  value="<? print $result_array[Sex]; ?>"> <? print $result_array[Sex]; ?>
+			<select name="profsex"> <option  value="<?php print $result_array[Sex]; ?>"> <?php print $result_array[Sex]; ?>
 				<option value="M" >M
 				<option value="F" >F
  			</select>
 		</td>
 		
 		<td align=right height=40>Hair Color:</td>
-		<td align=left><input size=15 maxlength=25 type="text" name="profhaircolor" value="<? print $result_array[HairColor]; ?>"> </td>
+		<td align=left><input size=15 maxlength=25 type="text" name="profhaircolor" value="<?php print $result_array[HairColor]; ?>"> </td>
 
 	</tr>
 	
 	<tr>
 		<td align=right height=40>Eye Color:</td>
-		<td align=left><input size=10 maxlength=10 type="text" name="profeyecolor" value="<? print $result_array[EyeColor]; ?>"> </td>
+		<td align=left><input size=10 maxlength=10 type="text" name="profeyecolor" value="<?php print $result_array[EyeColor]; ?>"> </td>
 		
 		<td align=right height=40>Eyes:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profeyes" value="<? print $result_array[Eyes]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profeyes" value="<?php print $result_array[Eyes]; ?>"> </td>
 	</tr>
 	
 	<tr>
 		<td align=right height=40>Vision:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profvision" value="<? print $result_array[Vision]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profvision" value="<?php print $result_array[Vision]; ?>"> </td>
 		
 		<td align=right height=40>Glasses:</td>
 		<td align=left>
-			<select name="profglasses"> <option  value="<? print $result_array[Glasses]; ?>"> <? print $result_array[Glasses]; ?>
+			<select name="profglasses"> <option  value="<?php print $result_array[Glasses]; ?>"> <?php print $result_array[Glasses]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
 		</td>
 	</tr>
 		<td align=right height=40>Ears:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profears" value="<? print $result_array[Ears]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profears" value="<?php print $result_array[Ears]; ?>"> </td>
 	
 		<td align=right height=40>Hearing:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profhearing" value="<? print $result_array[Hearing]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profhearing" value="<?php print $result_array[Hearing]; ?>"> </td>
 	<tr>
 		
 		
@@ -335,30 +335,30 @@ function fieldCheck(strValue, strEdit)
 	<tr>
 		<td align=right height=40>Hearing Aide:</td>
 		<td align=left>
-			<select name="profhearingaide"> <option  value="<? print $result_array[HearingAide]; ?>"> <? print $result_array[HearingAide]; ?>
+			<select name="profhearingaide"> <option  value="<?php print $result_array[HearingAide]; ?>"> <?php print $result_array[HearingAide]; ?>
 				<option value="Y" >Y
 				<option value="N" >N
  			</select>
 		</td>
 		
 		<td align=right height=40>Prosthesis:</td>
-		<td align=left><input size=25 maxlength=45 type="text" name="profprosthesis" value="<? print $result_array[Prosthesis]; ?>"> </td>
+		<td align=left><input size=25 maxlength=45 type="text" name="profprosthesis" value="<?php print $result_array[Prosthesis]; ?>"> </td>
 	</tr>
 
 	<tr>
 		<td align=right height=40>Skin:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profskin" value="<? print $result_array[Skin]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profskin" value="<?php print $result_array[Skin]; ?>"> </td>
 		
 		<td align=right height=40>Nose:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profnose" value="<? print $result_array[Nose]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profnose" value="<?php print $result_array[Nose]; ?>"> </td>
 	</tr>
 	
 	<tr>
 		<td align=right height=40>Mouth:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profmouth" value="<? print $result_array[Mouth]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profmouth" value="<?php print $result_array[Mouth]; ?>"> </td>
 		
 		<td align=right height=40>Teeth:</td>
-		<td align=left><input size=25 maxlength=25 type="text" name="profteeth" value="<? print $result_array[Teeth]; ?>"> </td>
+		<td align=left><input size=25 maxlength=25 type="text" name="profteeth" value="<?php print $result_array[Teeth]; ?>"> </td>
 	</tr>
 </table>	
 <br><center>

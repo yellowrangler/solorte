@@ -600,36 +600,36 @@ $DisplayCalendarBlock3 = "";
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div name="NavTabsArea" class="rightcontentTabs">
 <div class="tabtitlePos">
-<? print $DisplayBlockTabs; ?>
-<? print $DisplayBlockHdr; ?>
+<?php print $DisplayBlockTabs; ?>
+<?php print $DisplayBlockHdr; ?>
 </div>
-<? print $DisplayBlockFrame; ?>
+<?php print $DisplayBlockFrame; ?>
 </div>
 
 <div name="CalendarsArea" class="rightcontentSplitLeft">
 
 <div class="calendarArea">
-<? print $DisplayCalendarBlock1; ?>
+<?php print $DisplayCalendarBlock1; ?>
 <br>
-<? print $DisplayCalendarBlock2; ?>
+<?php print $DisplayCalendarBlock2; ?>
 <br>
-<? print $DisplayCalendarBlock3; ?>
+<?php print $DisplayCalendarBlock3; ?>
 </div>
 
 </div>
 
-<IFRAME name="detailFrame" src="<? print $detailSrcName; ?>"  scrolling=auto frameborder=0 class="rightcontentSplitRight"> </IFRAME>
+<IFRAME name="detailFrame" src="<?php print $detailSrcName; ?>"  scrolling=auto frameborder=0 class="rightcontentSplitRight"> </IFRAME>
 
 <form name="changemonth" method="post" ACTION="if_appprescvi.php" target="mainFrame">
 <div name="calbuttons" class="calendarButtons">
@@ -643,7 +643,7 @@ function startUp()
 		<td>&nbsp;</td>
 	</tr>
 </table>
-<input type='hidden' name='timestamp'  value='<? print $DisplayCurrentTimestamp; ?>'>
+<input type='hidden' name='timestamp'  value='<?php print $DisplayCurrentTimestamp; ?>'>
 </center>
 </div>
 

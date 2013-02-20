@@ -19,8 +19,8 @@ function setHostVariables($HostID, &$host, &$user, &$password)
 			
 		case 3:
 			$host = "localhost";
-			$user = "tarryc";
-			$password = "janetc";
+			$user = "root";
+			$password = "tarryc";
 			break;
 	}			
 }  // end of func

@@ -19,9 +19,9 @@ require ('hysDBinit.php');
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 <style type="text/css">
@@ -165,7 +165,7 @@ function startUp()
 <div name="dateLine" class="dateLine">
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><? print currDate(); ?></t
+    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><?php print currDate(); ?></t
   </tr>
 </table>
 </div>  
@@ -211,7 +211,7 @@ function startUp()
 
 <br>
 
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

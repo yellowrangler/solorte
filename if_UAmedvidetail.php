@@ -230,9 +230,9 @@ if ( isset($_GET[vaccinocid]) and ($_GET[vaccinocid] != "") )
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 <!--
@@ -377,7 +377,7 @@ function fieldCheck(strValue, strEdit)
 
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div name="detailArea" class="detailArea">
 <div class="detailformPos">
 <form  action="UAmedvi.php" method=post onsubmit="return formCheck(this);">
@@ -393,24 +393,24 @@ function fieldCheck(strValue, strEdit)
 	<tr valign=top>
 		<td align=right height=35>Vaccination Date:</td>
 		<td align=left colspan=3>
-			<input size=2 type="text" name="vaccinocStartmonth" value="<? print $DisplayStartMonth; ?>">/
-			<input size=2 type="text" name="vaccinocStartday" value="<? print $DisplayStartDay; ?>">/
-			<input size=4 type="text" name="vaccinocStartyear" value="<? print $DisplayStartYear; ?>"> (MM/DD/YYYY)
+			<input size=2 type="text" name="vaccinocStartmonth" value="<?php print $DisplayStartMonth; ?>">/
+			<input size=2 type="text" name="vaccinocStartday" value="<?php print $DisplayStartDay; ?>">/
+			<input size=4 type="text" name="vaccinocStartyear" value="<?php print $DisplayStartYear; ?>"> (MM/DD/YYYY)
 		</td>
 	</tr>	
 	<tr>
 		<td align=right height=35>Renew Date:</td>
 		<td align=left colspan=3>
-			<input size=2 type="text" name="vaccinocEndmonth" value="<? print $DisplayEndMonth; ?>">/
-			<input size=2 type="text" name="vaccinocEndday" value="<? print $DisplayEndDay; ?>">/
-			<input size=4 type="text" name="vaccinocEndyear" value="<? print $DisplayEndYear; ?>"> (MM/DD/YYYY)
+			<input size=2 type="text" name="vaccinocEndmonth" value="<?php print $DisplayEndMonth; ?>">/
+			<input size=2 type="text" name="vaccinocEndday" value="<?php print $DisplayEndDay; ?>">/
+			<input size=4 type="text" name="vaccinocEndyear" value="<?php print $DisplayEndYear; ?>"> (MM/DD/YYYY)
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Provider:</td>
 		<td colspan=3 align=left>
-			<select name="vaccinocprovider"> <option class="smallTxtGry" value="<? print $DisplayProviderID; ?>"><? print $DisplayProvider; ?> 
-			<? print $DisplayProviderList; ?>
+			<select name="vaccinocprovider"> <option class="smallTxtGry" value="<?php print $DisplayProviderID; ?>"><?php print $DisplayProvider; ?> 
+			<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 	</tr>
@@ -418,14 +418,14 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=35>Vaccination:</td>
 		<td align=left>
 			<select name="vaccinoctype"> 
-					<option class="smallTxtGry" value="<? print $DisplayVaccInocTypeID; ?>"><? print $DisplayVaccInoc; ?> 
-					<? print $DisplayVaccInocTypeList; ?>
+					<option class="smallTxtGry" value="<?php print $DisplayVaccInocTypeID; ?>"><?php print $DisplayVaccInoc; ?> 
+					<?php print $DisplayVaccInocTypeList; ?>
 				</select>
 		</td>	
 	</tr>
 	<tr valign=top>
 		<td align=right height=35>Medication:</td>
-		<td colspan=3 align=left><input size=45 maxlength=255 type="text" name="vaccinocmedication" value="<? print $DisplayMedication; ?>"> </td>
+		<td colspan=3 align=left><input size=45 maxlength=255 type="text" name="vaccinocmedication" value="<?php print $DisplayMedication; ?>"> </td>
 	</tr>
 </table>	
 <center>
@@ -443,7 +443,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 </table>
 </center>
-<input type='hidden' name='vaccinocid'  value='<? print $DisplayVaccInocID; ?>'>
+<input type='hidden' name='vaccinocid'  value='<?php print $DisplayVaccInocID; ?>'>
 </form>
 </div>
 </div>

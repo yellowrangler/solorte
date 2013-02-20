@@ -75,9 +75,9 @@ $FileName = "MySQLDump.sql";
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -92,7 +92,7 @@ function startUp()
 	</tr>	
 </table>
 </div>
-<IFRAME name="dumpFrame" src="<? print $FileName; ?>" class="innerframe" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="dumpFrame" src="<?php print $FileName; ?>" class="innerframe" scrolling=auto frameborder=0> </IFRAME>
 
 <div class="buttonPos">
 <center>
@@ -105,7 +105,7 @@ function startUp()
 </table>
 </center>	
 </div>
-<input type="hidden" name="filename" value="<? print $FileName; ?>">
+<input type="hidden" name="filename" value="<?php print $FileName; ?>">
 </form>
 </div>
 </body>

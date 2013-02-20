@@ -357,10 +357,10 @@ if (isset($_GET[eventid]) and ($_GET[eventid] != ""))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
 
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }	
 <!--
 // Copyright information must stay intact
@@ -578,14 +578,14 @@ function fieldCheck(strValue, strEdit)
 	return res;
 }
 
-<? print $jscriptScanDefSelect; ?>
+<?php print $jscriptScanDefSelect; ?>
 
 // -->	
 </script>
 		
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="UAmedhist.php" name="histupdate"  method=post onsubmit="return formCheck(this);">
@@ -598,17 +598,17 @@ function fieldCheck(strValue, strEdit)
 	<tr>
 		<td align=right>Date:</td>
 		<td align=left>
-			<input size=2 type="text" name="month" value="<? print $DisplayMonth; ?>">/
-			<input size=2 type="text" name="day" value="<? print $DisplayDay; ?>">/
-			<input size=4 type="text" name="year" value="<? print $DisplayYear; ?>"> (MM/DD/YYYY)
+			<input size=2 type="text" name="month" value="<?php print $DisplayMonth; ?>">/
+			<input size=2 type="text" name="day" value="<?php print $DisplayDay; ?>">/
+			<input size=4 type="text" name="year" value="<?php print $DisplayYear; ?>"> (MM/DD/YYYY)
 		</td>
 	
 		<td align=right height=25>Time:</td>
 		<td align=left>
-			<input class="SmTxt" size=2 type="text" name="hour" value="<? print $DisplayHour; ?>">:
-			<input class="SmTxt" size=2 type="text" name="min" value="<? print $DisplayMin; ?>">&nbsp;  
+			<input class="SmTxt" size=2 type="text" name="hour" value="<?php print $DisplayHour; ?>">:
+			<input class="SmTxt" size=2 type="text" name="min" value="<?php print $DisplayMin; ?>">&nbsp;  
 			<SELECT name="ampm"> 
-				<option value="<? print $DisplayAMPM; ?>"><? print $DisplayAMPM; ?>
+				<option value="<?php print $DisplayAMPM; ?>"><?php print $DisplayAMPM; ?>
 				<OPTION value="AM">AM 
 				<OPTION value="PM">PM
 			</SELECT> (HH:MM)
@@ -619,8 +619,8 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=25>Type:</td>
 		<td align=left colspan=2>
 			<select name="eventtype"> 
-				<option class="smallTxtGry" value="<? print $result_array[EventTypeID]; ?>"><? print $result_array[EventType]; ?> 
-				<? print $DisplayEventTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[EventTypeID]; ?>"><?php print $result_array[EventType]; ?> 
+				<?php print $DisplayEventTypeList; ?>
 			</select>
 		</td>
 	</tr>	
@@ -629,29 +629,29 @@ function fieldCheck(strValue, strEdit)
 		<td align=right height=25>Provider:</td>
 		<td align=left>
 			<select name="provider" onChange="UpdateHostList();"> 
-				<option class="smallTxtGry" value="<? print $result_array[ProvID]; ?>"><?  print $result_array[FirstName]; ?> <? print $result_array[LastName]; ?> <? print $result_array[Suffix]; ?> 
-				<? print $DisplayProviderList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[ProvID]; ?>"><?php  print $result_array[FirstName]; ?> <?php print $result_array[LastName]; ?> <?php print $result_array[Suffix]; ?> 
+				<?php print $DisplayProviderList; ?>
 			</select>
 		</td>
 		<td align=right height=25>Location:</td>
 		<td align=left>
 			<select name="hosts"> 
-				<option class="smallTxtGry" value="<? print $result_array[HostID]; ?>"><? print $result_array[Name]; ?> 
-					<? print $DisplayHostList; ?>
+				<option class="smallTxtGry" value="<?php print $result_array[HostID]; ?>"><?php print $result_array[Name]; ?> 
+					<?php print $DisplayHostList; ?>
 			</select>
 		</td>
 	</tr> 
 
 	<tr>
 		<td align=right height=25>Description:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="desc" value="<? print $result_array[Event]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="desc" value="<?php print $result_array[Event]; ?>"> </td>
 	</tr> 
 	<tr>
 		<td align=right height=25>ICD:</td>
-		<td align=left><input size=15 maxlength=25 type="text" name="icd" value="<? print $result_array[ICD9Code]; ?>"> </td>
+		<td align=left><input size=15 maxlength=25 type="text" name="icd" value="<?php print $result_array[ICD9Code]; ?>"> </td>
 	
 		<td align=right height=25>Diagnosis:</td>
-		<td align=left><input size=30 maxlength=255 type="text" name="diag" value="<? print $result_array[ICD9Text]; ?>"> </td>
+		<td align=left><input size=30 maxlength=255 type="text" name="diag" value="<?php print $result_array[ICD9Text]; ?>"> </td>
 	</tr> 
 </table>
 <br>
@@ -670,7 +670,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 </table>
 </center>
-<input type="hidden" name="eventid" value="<? print $EventID; ?>">	
+<input type="hidden" name="eventid" value="<?php print $EventID; ?>">	
 </form>
 </div>
 
@@ -686,7 +686,7 @@ function fieldCheck(strValue, strEdit)
 		<td width=35>&nbsp;</td>
 		
 		<td height=25 valign=center align=right>Upload:</td>
-		<td height=25 valign=center align=left><input size=50 type="file" <? print $DisplayReadOnly; ?>  name="fileupload"></td>
+		<td height=25 valign=center align=left><input size=50 type="file" <?php print $DisplayReadOnly; ?>  name="fileupload"></td>
 	</tr>
 	
 	<tr>
@@ -694,8 +694,8 @@ function fieldCheck(strValue, strEdit)
 		
 		<td height=25 valign=center align=right>Description:&nbsp;</td>
 		<td height=25 valign=center align=left>
-			<input size=50 maxlength=255 type="text" <? print $DisplayReadOnly; ?>  name="desc" value="">
-			<input type=<? print $DisplaySubmitButton; ?> size=150 NAME="SUBMIT" <? print $DisplayReadOnly; ?>  VALUE="Send File">
+			<input size=50 maxlength=255 type="text" <?php print $DisplayReadOnly; ?>  name="desc" value="">
+			<input type=<?php print $DisplaySubmitButton; ?> size=150 NAME="SUBMIT" <?php print $DisplayReadOnly; ?>  VALUE="Send File">
 		</td>
 	</tr>
 	
@@ -710,8 +710,8 @@ function fieldCheck(strValue, strEdit)
 					<td height=25 valign=center align=right>Scan Type:</td>
 					<td align=left>
 						<select name="scantype" onchange="buildScanDef();"> 
-							<option class="smallTxtGry" value="<? print $result_array[ScanTypeID]; ?>"><? print $result_array[ScanType]; ?> 
-							<? print $DisplayScanTypeList; ?>
+							<option class="smallTxtGry" value="<?php print $result_array[ScanTypeID]; ?>"><?php print $result_array[ScanType]; ?> 
+							<?php print $DisplayScanTypeList; ?>
 						</select>
 					</td>
 					
@@ -731,7 +731,7 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	
 </table>
-<input type="hidden" name="eventid" value="<? print $EventID; ?>">
+<input type="hidden" name="eventid" value="<?php print $EventID; ?>">
 <input type="hidden" name="MAX_FILE_SIZE" value="512000">
 </form>
 </div>
@@ -742,13 +742,13 @@ function fieldCheck(strValue, strEdit)
 		<td width="100%" align=center height=20 colspan=3>Scanned Documents</td>
 	</tr>	
 	<tr>
-		<td width="25%" align="center" height="20"><a href="if_UAmedhistscanlist.php?eventid=<? print $EventID ?>&order=type"  class="linkTitletype" target="scanFramelist">Type</a></td>
-		<td width="25%" align="center" height="20"><a href="if_UAmedhistscanlist.php?eventid=<? print $EventID ?>&order=def"  class="linkTitletype" target="scanFramelist">Def</a></td>
-		<td width="35%" align="center"><a href="if_UAmedhistscanlist.php?eventid=<? print $EventID ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description</a></td>
+		<td width="25%" align="center" height="20"><a href="if_UAmedhistscanlist.php?eventid=<?php print $EventID ?>&order=type"  class="linkTitletype" target="scanFramelist">Type</a></td>
+		<td width="25%" align="center" height="20"><a href="if_UAmedhistscanlist.php?eventid=<?php print $EventID ?>&order=def"  class="linkTitletype" target="scanFramelist">Def</a></td>
+		<td width="35%" align="center"><a href="if_UAmedhistscanlist.php?eventid=<?php print $EventID ?>&order=desc"  class="linkTitletype" target="scanFramelist">Description</a></td>
 		<td width="15%" align="center">Image</td>
 	</tr>	
 </table>
 </div>
-<IFRAME name="scanFramelist" src="if_UAmedhistscanlist.php?eventid=<? print $EventID; ?>" class="innerScanlistframe" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="scanFramelist" src="if_UAmedhistscanlist.php?eventid=<?php print $EventID; ?>" class="innerScanlistframe" scrolling=auto frameborder=0> </IFRAME>
 </body>
 </html>

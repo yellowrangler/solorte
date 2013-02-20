@@ -28,9 +28,9 @@ require ('hysDBinit.php');
 
 <body>
 
-<? require ('hysTopLegend.php'); ?>
+<?php require ('hysTopLegend.php'); ?>
 
-<? require ('hysMainNav.php'); ?>
+<?php require ('hysMainNav.php'); ?>
 
 <div class="selectedContent">
 <br><br>
@@ -44,7 +44,7 @@ require ('hysDBinit.php');
 </table>
 
 </div>
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

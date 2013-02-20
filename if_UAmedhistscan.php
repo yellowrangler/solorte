@@ -97,9 +97,9 @@ else
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -107,7 +107,7 @@ function startUp()
 <body onload="startUp()">
 
 <table width="100%" class="SmTxt">
-	<? print $DisplayScannedImages; ?>
+	<?php print $DisplayScannedImages; ?>
 </table>
 
 </body>

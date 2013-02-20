@@ -30,9 +30,9 @@ session_destroy();
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 <link rel="stylesheet" type="text/css" href="css/hysstyle.css" />
@@ -83,7 +83,7 @@ function startUp()
       <td width="15%" align="right" class="smallTextLegend"><a href="hysmain.php">Logon</a></td>
 	  <td width="15%" align="right" class="smallTextLegend"><a href="#" OnClick="printDoc()">Print this Page</a></td>
       <td width="15%" align="right" class="smallTextLegend"><a href="#" onClick="(PopUpWindow('puhelp.php?selection=".$selection."', 'r', 3))">Help</a></td>
-	  <td width="20%" align="right" class="smallTextLegend"><? print currDate(); ?></td>
+	  <td width="20%" align="right" class="smallTextLegend"><?php print currDate(); ?></td>
   </tr>
 </table>
 </div>
@@ -145,7 +145,7 @@ function startUp()
 
 </div>
 
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

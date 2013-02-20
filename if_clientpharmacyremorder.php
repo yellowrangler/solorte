@@ -148,9 +148,9 @@ if (isset($_GET[clientid]) && ($_GET[clientid] != "") )
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
  
@@ -158,7 +158,7 @@ function startUp()
 
 <body onload="startUp()">
 <table width="100%" cellspacing="0" cellpadding="0">
-	<? print $DisplayList; ?>
+	<?php print $DisplayList; ?>
 </table>
 </body>
 </html>

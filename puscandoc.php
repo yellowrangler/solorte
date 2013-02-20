@@ -403,9 +403,9 @@ switch ($DisplayScanTypeID)
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 
 </script>
@@ -430,17 +430,17 @@ function startUp()
 			<table>
 				<tr>
 					<td align=right class="smallText2">Description:</td>
-					<td align=left class="smallText2Bold"><? print $DisplayDescription; ?></td>
+					<td align=left class="smallText2Bold"><?php print $DisplayDescription; ?></td>
 					
 					<td width=20>&nbsp;</td>
 					
 					<td align=right class="smallText2">Scan Type:</td>
-					<td align=left class="smallText2Bold"><? print $DisplayScanType; ?></td>
+					<td align=left class="smallText2Bold"><?php print $DisplayScanType; ?></td>
 					
 					<td width=20>&nbsp;</td>
 					
 					<td align=right class="smallText2">Scan Definition:</td>
-					<td align=left class="smallText2Bold"><? print $DisplayScanDefinition; ?></td>
+					<td align=left class="smallText2Bold"><?php print $DisplayScanDefinition; ?></td>
 				</tr>
 			</table>
 		</td>	
@@ -468,18 +468,18 @@ function startUp()
 			<table>
 				<tr>
 					<td width=15>&nbsp;</td>
-					<td align=right  height=15><input  <? print $ButtonHidden; ?> type="submit" name="Action" value="Prev"></td>
+					<td align=right  height=15><input  <?php print $ButtonHidden; ?> type="submit" name="Action" value="Prev"></td>
 					<td width=15>&nbsp;</td>
-					<td align=left  height=15><input  <? print $ButtonHidden; ?> type="submit"  name="Action" value="Next"></td>
+					<td align=left  height=15><input  <?php print $ButtonHidden; ?> type="submit"  name="Action" value="Next"></td>
 				</tr>
 			</table>
 		</td>	
 		<td align=right valign=top width="25%" class="smallText">&nbsp;</td>
 	</tr>
 </table>
-<input type="hidden" name="eventid" value="<? print $DisplayEventID; ?>">	
-<input type="hidden" name="scanid" value="<? print $DisplayScanID; ?>">		
-<input type="hidden" name="zoom" value="<? print $ControlImageWidth; ?>">	
+<input type="hidden" name="eventid" value="<?php print $DisplayEventID; ?>">	
+<input type="hidden" name="scanid" value="<?php print $DisplayScanID; ?>">		
+<input type="hidden" name="zoom" value="<?php print $ControlImageWidth; ?>">	
 </form>
 </center>	
 </div>
@@ -489,7 +489,7 @@ function startUp()
 <table width="100%">
 	<tr>
 		<td  height="100%" align=center valign=center>
-<? print $DisplayItemArea; ?>
+<?php print $DisplayItemArea; ?>
 		</td>
 	</tr>
 </table>	

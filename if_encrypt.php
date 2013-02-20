@@ -60,9 +60,9 @@ if (isset($_POST[Action]) && ($_POST[Action] != "") )
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 <style type="text/css">
@@ -151,15 +151,15 @@ function startUp()
 	</tr>	
 	<tr>
 		<td align=right height=35>String to Encrypt:</td>
-		<td align=left><input size=45 maxlength=45 type="text" name="stringto" value="<? print $DisplayStringTo; ?>"> </td>
+		<td align=left><input size=45 maxlength=45 type="text" name="stringto" value="<?php print $DisplayStringTo; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Encrypted String:</td>
-		<td align=left><input readonly class="readonlyText" size=45 maxlength=45 type="text" name="encrypt" value="<? print $DisplayEncryptedString; ?>"> </td>
+		<td align=left><input readonly class="readonlyText" size=45 maxlength=45 type="text" name="encrypt" value="<?php print $DisplayEncryptedString; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Decrypted String:</td>
-		<td align=left><input readonly class="readonlyText" size=45 maxlength=45 type="text" name="decrypt" value="<? print $DisplayDecryptedString; ?>"> </td>
+		<td align=left><input readonly class="readonlyText" size=45 maxlength=45 type="text" name="decrypt" value="<?php print $DisplayDecryptedString; ?>"> </td>
 	</tr>
 </table>
 <input type="hidden" name="dummy" value="">		
@@ -186,13 +186,13 @@ function startUp()
 	</tr>	
 	<tr>
 		<td align=right height=35>Your Password:</td>
-		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="yourpassword" value="<? print $DisplayYourPassword; ?>"> </td>
+		<td align=left><input class="readonlyText" readonly size=15 maxlength=15 type="text" name="yourpassword" value="<?php print $DisplayYourPassword; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Choose:</td>
 		<td align=left>
 			<select name="edselect"> 
-				<option value=""><? print $DisplayEDChoice; ?> 
+				<option value=""><?php print $DisplayEDChoice; ?> 
 				<option value="encrypt">Encrypt All
 				<option value="decrypt">Dencrypt All
 			</select>

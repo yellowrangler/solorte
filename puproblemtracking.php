@@ -478,9 +478,9 @@ $DisplayProblemTrackingID = $result_array[MaxProblemTrackingID] + 1;
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -509,7 +509,7 @@ function startUp()
 <div name="dateLine" class="dateLine">
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><? print currDate(); ?></t
+    <td width="100%" valign="center" align="left" class="logincrumbLineBorder" height="15"><?php print currDate(); ?></t
   </tr>
 </table>
 </div>  
@@ -531,18 +531,18 @@ function startUp()
 	</tr>	
 	<tr>
 		<td align=right valign=center height=15>User Name:</td>
-		<td align=left><input readonly class="readonlyText" size=50 maxlength=50 type="text" name="name" value="<? print $DisplayName; ?>"></td>
+		<td align=left><input readonly class="readonlyText" size=50 maxlength=50 type="text" name="name" value="<?php print $DisplayName; ?>"></td>
 	</tr>
 	<tr>
 		<td align=right height=35>Problem Tracking ID:</td>
-		<td align=left><input readonly class="readonlyText" size=10  maxlength=10 type="text" name="problemtrackingid" value="<? print $DisplayProblemTrackingID; ?>"</td>
+		<td align=left><input readonly class="readonlyText" size=10  maxlength=10 type="text" name="problemtrackingid" value="<?php print $DisplayProblemTrackingID; ?>"</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Problem Type:</td>
 		<td align=left>
 			<select name="problemtype"> 
-				<option class="smallTxtGry" value="<? print $DisplayProblemTypeID; ?>"><? print $DisplayProblemType; ?> 
-				<? print $DisplayProblemTypeList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayProblemTypeID; ?>"><?php print $DisplayProblemType; ?> 
+				<?php print $DisplayProblemTypeList; ?>
 			</select>
 		</td>
 	</tr>
@@ -550,8 +550,8 @@ function startUp()
 		<td align=right height=35>Problem Area:</td>
 		<td align=left>
 			<select name="problemarea"> 
-				<option class="smallTxtGry" value="<? print $DisplayProblemAreaID; ?>"><? print $DisplayProblemArea; ?> 
-				<? print $DisplayProblemAreaList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayProblemAreaID; ?>"><?php print $DisplayProblemArea; ?> 
+				<?php print $DisplayProblemAreaList; ?>
 			</select>
 		</td>
 	</tr>
@@ -559,27 +559,27 @@ function startUp()
 		<td align=right height=35>Browser:</td>
 		<td align=left>
 			<select name="browser"> 
-				<option class="smallTxtGry" value="<? print $DisplayBrowserID; ?>"><? print $DisplayBrowser; ?> 
-				<? print $DisplayBrowserList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayBrowserID; ?>"><?php print $DisplayBrowser; ?> 
+				<?php print $DisplayBrowserList; ?>
 			</select>
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Browser Other:</td>
-		<td align=left><input size=30 maxlength=50 type="text" name="browserother" value="<? print $DisplayBrowserOther; ?>"> </td>
+		<td align=left><input size=30 maxlength=50 type="text" name="browserother" value="<?php print $DisplayBrowserOther; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Operating System:</td>
 		<td align=left>
 			<select name="os"> 
-				<option class="smallTxtGry" value="<? print $DisplayOSID; ?>"><? print $DisplayOS; ?> 
-				<? print $DisplayOSList; ?>
+				<option class="smallTxtGry" value="<?php print $DisplayOSID; ?>"><?php print $DisplayOS; ?> 
+				<?php print $DisplayOSList; ?>
 			</select>
 		</td>
 	</tr>
 	<tr>
 		<td align=right height=35>Operating System Other:</td>
-		<td align=left><input size=30 maxlength=50 type="textarea" name="osother" value="<? print $DisplayOSOther; ?>"> </td>
+		<td align=left><input size=30 maxlength=50 type="textarea" name="osother" value="<?php print $DisplayOSOther; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35 valign=top>Problem Statement:</td>
@@ -587,8 +587,8 @@ function startUp()
 	</tr>
 </table>
 <input type="hidden" name="Action" value="add">
-<input type="hidden" name="userid" value="<? print $ProxyUserID; ?>">
-<input type="hidden" name="usertype" value="<? print $ProxyType; ?>">		
+<input type="hidden" name="userid" value="<?php print $ProxyUserID; ?>">
+<input type="hidden" name="usertype" value="<?php print $ProxyType; ?>">		
 <br>
 <table>
 	<tr>
@@ -605,7 +605,7 @@ function startUp()
 <table width="90%">
 	<tr>
 		<td align=center>
-			<h4><? print $_GET[msgTxt]; ?> &nbsp;</h4>
+			<h4><?php print $_GET[msgTxt]; ?> &nbsp;</h4>
 		</td>
 	</tr> 
 </table>	

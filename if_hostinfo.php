@@ -164,9 +164,9 @@ else
 <script type="text/javascript" language="JavaScript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 <!--
 // Copyright information must stay intact
@@ -306,13 +306,13 @@ function fieldCheck(strValue, strEdit)
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailBody">
 <form  action="hostinfo.php" method=post onsubmit="return formCheck(this);">
 <table width="100%" class="outerBorderMessageTitleBlue">
 	<tr>
-		 <td height=20 align="center"><? print $displayTitle; ?></td>
+		 <td height=20 align="center"><?php print $displayTitle; ?></td>
 	</tr>	
 </table>
 
@@ -322,49 +322,49 @@ function fieldCheck(strValue, strEdit)
 	</tr>
 	<tr>
 		<td align=right height=35>Host Name:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="hostname" value="<? print $result_array[Name]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="hostname" value="<?php print $result_array[Name]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right>Host Type:</td>
 		<td align=left>
 			<select name="hosttype"> 
-				<option class="smallTxtGry" value="<? print  $result_array[TypeID]; ?>"><? print  $result_array[HostDesc]; ?> 
-				<? print $DisplayHostTypeList; ?>
+				<option class="smallTxtGry" value="<?php print  $result_array[TypeID]; ?>"><?php print  $result_array[HostDesc]; ?> 
+				<?php print $DisplayHostTypeList; ?>
 			</select>
 		</td>
 	</tr>	
 	<tr>
 		<td align=right height=35>Address Line 1:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<? print $result_array[AddrLine1]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr1" value="<?php print $result_array[AddrLine1]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Address Line 2:</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<? print $result_array[AddrLine2]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="addr2" value="<?php print $result_array[AddrLine2]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>City:</td>
-		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<? print $result_array[City]; ?>"> </td>
+		<td align=left><input size=25 maxlength=45 type="text" name="city" value="<?php print $result_array[City]; ?>"> </td>
 
 		<td align=right height=35>State:</td>
-		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<? print $result_array[State]; ?>"> </td>
+		<td align=left><input size=2 maxlength=2 type="text" name="state" value="<?php print $result_array[State]; ?>"> </td>
 		
 		<td align=right height=35>Zip Code:</td>
-		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<? print $result_array[ZIP]; ?>"> </td>
+		<td align=left><input size=10 maxlength=45 type="text" name="zip" value="<?php print $result_array[ZIP]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>Phone Number:</td>
-		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="phonenbr" value="<? print $result_array[PhoneNbr]; ?>"> </td>
+		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="phonenbr" value="<?php print $result_array[PhoneNbr]; ?>"> </td>
 		
 		<td align=right height=35>Emergency Number:</td>
-		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="emergnbr" value="<? print $result_array[EmergNbr]; ?>"> </td>
+		<td align=left colspan=3><input size=15 maxlength=15 type="text" name="emergnbr" value="<?php print $result_array[EmergNbr]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=35>URL</td>
-		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="url" value="<? print $result_array[URL]; ?>"> </td>
+		<td align=left colspan=5><input size=40 maxlength=255 type="text" name="url" value="<?php print $result_array[URL]; ?>"> </td>
 	</tr>
 </table>
-<input type="hidden" name="Action" value="<? print $isType; ?>">	
-<input type="hidden" name="hostid" value="<? print $result_array[hostID]; ?>">	
+<input type="hidden" name="Action" value="<?php print $isType; ?>">	
+<input type="hidden" name="hostid" value="<?php print $result_array[hostID]; ?>">	
 <br><center>
 <table>
 	<tr>

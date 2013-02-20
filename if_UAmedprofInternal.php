@@ -107,14 +107,14 @@ $result_array = mysql_fetch_assoc($sql_result);
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 <div class="detailArea">
 <form  action="UAmedprofInternal.php" method=post>
 <table width="100%" class="outerBorderMessageTitleBlue">
@@ -125,64 +125,64 @@ function startUp()
 <table width="100%" class="SmTxt">
 	<tr>
 		<td align=right height=20>Systolic Pressure:</td>
-		<td align=left><input size=10 maxlength=10 type="text" name="profsys" value="<? print $result_array[SystolicPressure]; ?>"> </td>
+		<td align=left><input size=10 maxlength=10 type="text" name="profsys" value="<?php print $result_array[SystolicPressure]; ?>"> </td>
 	
 		<td align=right height=20>Diastolic Pressure:</td>
-		<td align=left><input size=10 maxlength=25 type="text" name="profdias" value="<? print $result_array[DiastolicPressure]; ?>"> </td>
+		<td align=left><input size=10 maxlength=25 type="text" name="profdias" value="<?php print $result_array[DiastolicPressure]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Cholesterol LDL:</td>
-		<td align=left><input size=4 maxlength=4 type="text" name="profldl" value="<? print $result_array[LDL]; ?>"> </td>
+		<td align=left><input size=4 maxlength=4 type="text" name="profldl" value="<?php print $result_array[LDL]; ?>"> </td>
 	
 		<td align=right height=20>Cholesterol HDL:</td>
-		<td align=left><input size=4 maxlength=4 type="text" name="profhdl" value="<? print $result_array[HDL]; ?>"> </td>
+		<td align=left><input size=4 maxlength=4 type="text" name="profhdl" value="<?php print $result_array[HDL]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Blood Type:</td>
-		<td align=left><input size=15 maxlength=25 type="text" name="profbloodtype" value="<? print $result_array[BloodType]; ?>"> </td>	
+		<td align=left><input size=15 maxlength=25 type="text" name="profbloodtype" value="<?php print $result_array[BloodType]; ?>"> </td>	
 
 		<td align=right height=20>&nbsp;</td>
 		<td align=left>&nbsp; </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Skeletal:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profskel" value="<? print  $result_array[Skeletal]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profskel" value="<?php print  $result_array[Skeletal]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Muscular:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profmusc" value="<? print $result_array[Muscular]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profmusc" value="<?php print $result_array[Muscular]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Digestive:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profdig" value="<? print  $result_array[Digestive]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profdig" value="<?php print  $result_array[Digestive]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Respiratory:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profresp" value="<? print $result_array[Respiratory]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profresp" value="<?php print $result_array[Respiratory]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Urinary:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profuring" value="<? print  $result_array[Urinary]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profuring" value="<?php print  $result_array[Urinary]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Nervous:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profnerv" value="<? print $result_array[Nervous]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profnerv" value="<?php print $result_array[Nervous]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Circulatory:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profcirc" value="<? print $result_array[Circulatory]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profcirc" value="<?php print $result_array[Circulatory]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Endocrine:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profendo" value="<? print  $result_array[Endocrine]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profendo" value="<?php print  $result_array[Endocrine]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Reproductive:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profrepro" value="<? print $result_array[Reproductive]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profrepro" value="<?php print $result_array[Reproductive]; ?>"> </td>
 	</tr>
 	<tr>
 		<td align=right height=20>Immune:</td>
-		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profimm" value="<? print  $result_array[Immune]; ?>"> </td>
+		<td align=left colspan=3><input size=60 maxlength=255 type="text" name="profimm" value="<?php print  $result_array[Immune]; ?>"> </td>
 	</tr>
 </table>	
 <br>

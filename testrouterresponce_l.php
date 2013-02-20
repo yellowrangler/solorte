@@ -81,7 +81,7 @@
 <table width="100%" class="SmTxt">
 	<tr valign=top>
 		<td align=right width="50%" height=35>IP Address:</td>
-		<td align=leftwidth="50%"><b><? print $_GET[ip]; ?></b>b> </td>
+		<td align=leftwidth="50%"><b><?php print $_GET[ip]; ?></b>b> </td>
 	</tr>
 	<tr>
 		<td align=center colspan=2 height=35><b>Local</b>b></td>

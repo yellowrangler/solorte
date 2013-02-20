@@ -195,14 +195,14 @@ while ($result_array = mysql_fetch_assoc($sql_result))
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
-<body <? print $BodySelectColor ?> onload="startUp()">
+<body <?php print $BodySelectColor ?> onload="startUp()">
 
 <div class="detailLeft">
 <table width="100%" class="outerBorderTitleBlue">
@@ -212,7 +212,7 @@ function startUp()
 </table>
 <table width="100%">
 	<tr>
-		<? print $DisplayBlock; ?>
+		<?php print $DisplayBlock; ?>
 	</tr>	
 </table>
 
@@ -229,6 +229,6 @@ function startUp()
 </table>
 </div>
 
-<IFRAME name="innerlistFrame" src="if_RQhistorydetaillog.php?requestid=<? print $DisplayRequestID; ?>" class="innerListSelectframe" scrolling=auto frameborder=0> </IFRAME>
+<IFRAME name="innerlistFrame" src="if_RQhistorydetaillog.php?requestid=<?php print $DisplayRequestID; ?>" class="innerListSelectframe" scrolling=auto frameborder=0> </IFRAME>
 </body>
 </html>

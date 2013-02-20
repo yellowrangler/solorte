@@ -106,9 +106,9 @@ $DisplayRequestTime = CovertMySQLTime($result_array["RequestDateTime"], 2, 2);
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
@@ -119,47 +119,47 @@ function startUp()
 <table align=left width="90%" class="tblDetailsmTextOff">
 	<tr>
 		<td align=right height=25 >Status:&nbsp;</td>
-		<td align=left><b><? print  $result_array[Description]; ?></b></td> 
+		<td align=left><b><?php print  $result_array[Description]; ?></b></td> 
 	</tr>
  	
 	<tr >
   		<td align=right height=25 >Request Date:&nbsp;</td>
-		<td align=left><b><? print $DispalyRequestDate; ?></b></td> 
+		<td align=left><b><?php print $DispalyRequestDate; ?></b></td> 
 		
 		<td align=right height=25 >Request Time:&nbsp;</td>
-		<td align=left><b><? print $DisplayRequestTime; ?></b></td> 
+		<td align=left><b><?php print $DisplayRequestTime; ?></b></td> 
 	</tr> 
 
 	<tr >
   		<td align=right height=25 >Service Date:&nbsp;</td>
-		<td align=left><b><? print $DisplayServiceDate; ?></b></td>
+		<td align=left><b><?php print $DisplayServiceDate; ?></b></td>
 		
 		<td align=right height=25 >Service Time:&nbsp;
-		<td align=left><b><? print $DisplayServiceTime; ?></b></td> 
+		<td align=left><b><?php print $DisplayServiceTime; ?></b></td> 
 	</tr> 
 	
 	<tr >
 		<td align=right height=25 >Type:&nbsp;</td>
-		<td align=left><b><? print $result_array[EventType]; ?></b></td>
+		<td align=left><b><?php print $result_array[EventType]; ?></b></td>
 		
 		<td align=right height=25 >Provider:&nbsp;
-		<td align=left><b><? print $result_array[FirstName]." ".$result_array[LastName]." ".$result_array[Suffix]; ?></b></td>
+		<td align=left><b><?php print $result_array[FirstName]." ".$result_array[LastName]." ".$result_array[Suffix]; ?></b></td>
 		
 	</tr> 
 
 	<tr >
 		<td align=right height=25 >Location:&nbsp;</td>
-		<td align=left colspan=5><b><? print $result_array[Name]; ?></b></td>
+		<td align=left colspan=5><b><?php print $result_array[Name]; ?></b></td>
 	</tr> 
 
 	<tr >
 		<td align=right height=25 >Description:&nbsp;</td>
-		<td align=left colspan=5><b><? print $result_array[Request]; ?></b></td> 
+		<td align=left colspan=5><b><?php print $result_array[Request]; ?></b></td> 
 	</tr>
 	
 	<tr >
 		<td align=right height=25 >Service Comments:&nbsp;</td>
-		<td align=left colspan=5><b><? print $result_array[Comments]; ?></b></td> 
+		<td align=left colspan=5><b><?php print $result_array[Comments]; ?></b></td> 
 	</tr>
 </table>
 </div>

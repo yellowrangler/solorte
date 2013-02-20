@@ -70,9 +70,9 @@ require ('hysDBinit.php');
 
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 	
 	changeCellClass(1);
 }
@@ -111,9 +111,9 @@ function changeCellClass(id)
 
 <body onload="startUp()">
 
-<? require ('hysTopLegend.php'); ?>
+<?php require ('hysTopLegend.php'); ?>
 
-<? require ('hysMainNav.php'); ?>
+<?php require ('hysMainNav.php'); ?>
 
 <div class="selectedContent">
 <div id="leftcontent" class="leftcontent">
@@ -168,12 +168,12 @@ function changeCellClass(id)
 </table>
 </center>
 <br><br>
-<? require ('hysNamePhoto.php'); ?>
+<?php require ('hysNamePhoto.php'); ?>
 </div>
 
 <IFRAME name="mainFrame" src="if_UAmedapp.php"  class="rightcontent" scrolling="no" frameborder="0"></IFRAME>
 </div>
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

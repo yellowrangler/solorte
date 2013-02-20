@@ -25,18 +25,18 @@ require ('hysDBinit.php');
 <script type="text/javascript">
 function startUp() 
 {	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?>
 		
-	<? print $JavaScriptMsg; ?>
+	<?php print $JavaScriptMsg; ?>
 }
 </script>
 </head>
 
 <body onload="startUp()">
 
-<? require ('hysTopLegend.php'); ?>
+<?php require ('hysTopLegend.php'); ?>
 
-<? require ('hysMainNav.php'); ?>
+<?php require ('hysMainNav.php'); ?>
 
 <div class="selectedContent">
 <br><br>
@@ -50,7 +50,7 @@ function startUp()
 </table>
 
 </div>
-<? require ('hysFooter.php'); ?>
+<?php require ('hysFooter.php'); ?>
 
 </body>
 

@@ -109,10 +109,10 @@ if (!$conn)
 //----------------------------------------------------------------------------------------------------------
 // pick the database to use
 //----------------------------------------------------------------------------------------------------------
-if (!mysql_select_db("ClientInfoDB", $conn)) 
+if (!mysql_select_db("clientinfodb", $conn)) 
 {
 	$sqlerr = mysql_error();
-	$errmsg = "$sqlerr - Error doing mysql_select_db for ClientInfoDB (82b) - '$_POST[MP]'";
+	$errmsg = "$sqlerr - Error doing mysql_select_db for clientinfodb (82b) - '$_POST[MP]'";
 	$location ="Location: invalidlogin.php";
 	LogErr($shortmsg, $errmsg, $location, $module, $severity);
 }	

@@ -141,3 +141,11 @@
 2008-11-07 13:47:12 : 1 :  Error more or less then 1 rows returned in select on join for provider, full name, spectype and host. count = ''  - '1' : pudoctor.php
 2008-11-07 13:47:12 : 1 :  Error more or less then 1 rows returned in select on join for host and addr. count = '0'  - '1' : pudoctor.php
 2008-11-16 11:48:00 : 1 : User id not found  = '0' - 'tarryc'  userType = 'T' userID = 'ARRYC' num_rows = '0'  : login.php
+2013-03-07 19:09:54 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:04 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:06 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:44 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:45 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:46 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:10:47 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-03-07 19:11:19 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php

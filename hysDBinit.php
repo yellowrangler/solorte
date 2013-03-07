@@ -33,7 +33,7 @@ function setHostVariables($HostID, &$host, &$user, &$password)
 	
 }  // end of func
 
-$DataBase = "ClientInfoDB";
+$DataBase = "clientinfodb";
 
 setHostVariables($WhichHost, $host, $user, $password);
 
@@ -51,7 +51,7 @@ if (!$conn)
 if (!mysql_select_db($DataBase, $conn)) 
 {
 	$sqlerr = mysql_error();
-	$errmsg = "$sqlerr - Error doing mysql_select_db for ClientInfoDB (94) - '$Medpal'";
+	$errmsg = "$sqlerr - Error doing mysql_select_db for clientinfodb (94) - '$Medpal'";
 	$location = "Location: invalidsql.php";
 	LogErrSevere($errmsg, $location);
 }	

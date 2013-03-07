@@ -126,7 +126,7 @@ $conn = mysql_connect($host, $user, $password);
 if (!$conn) 
 {
 	$sqlerr = mysql_error();
-	$errmsg = "$sqlerr -  Error doing mysql_select_db for ClientInfoDB (82a) - '$_POST[userid]'";
+	$errmsg = "$sqlerr -  Error doing mysql_select_db for clientinfodb (82a) - '$_POST[userid]'";
 	$shortmsg = "System DB error.  If this persists, Please call Customer Support.";
 	$location = "Location: hysmain.php";
 	$severity = 1;
@@ -136,7 +136,7 @@ if (!$conn)
 //----------------------------------------------------------------------------------------------------------
 // pick the database to use
 //----------------------------------------------------------------------------------------------------------
-if (!mysql_select_db("ClientInfoDB", $conn)) 
+if (!mysql_select_db("clientinfodb", $conn)) 
 {
 	$sqlerr = mysql_error();
 	$errmsg = "$sqlerr -  Error doing mysql_connect (81) - '$_POST[userid]'";

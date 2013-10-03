@@ -149,3 +149,43 @@
 2013-03-07 19:10:46 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
 2013-03-07 19:10:47 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
 2013-03-07 19:11:19 : 1 : Unknown database 'ClientInfoDB' -  Error doing mysql_connect (81) - 'm1' : login.php
+2013-06-05 18:36:20 : 1 : Table 'clientinfodb.ScanDefinitionTBL' doesn't exist - Error doing mysql_query for ScanDefinitionTBL  (396) - '1' : if_medhistoryDocScan.php
+2013-06-05 18:36:20 : 1 : Table 'clientinfodb.ScanDefinitionTBL' doesn't exist - Error doing mysql_query for big big join (195) sql = '	SELECT DISTINCT ScanID, EventScanInfo, EventScanTBL.ScanTypeID as Scan_TypeID, ClientEventID, ScanType, URL, ScanDefinition,
+				ProviderID, StartDate, FirstName, LastName, Suffix, Prefix
+				
+	from ClientEventTBL		
+		inner join EventScanTBL on ClientEventTBL.ID = EventScanTBL.ClientEventID
+		inner join ScanTypeTBL on EventScanTBL.ScanTypeID = ScanTypeTBL.ID
+		inner join ScanDefinitionTBL on EventScanTBL.ScanDefinitionkeyID = ScanDefinitionTBL.keyID
+		
+		inner join CalendarTBL on ClientEventTBL.CalendarID = CalendarTBL.ID
+		inner join ProviderTBL on ClientEventTBL.ProviderID = ProviderTBL.ID
+		inner join FullNameTBL on ProviderTBL.FullNameID = FullNameTBL.ID
+ 		inner join ScanInfoTBL on EventScanTBL.ScanID = ScanInfoTBL.ID
+			where ( (ClientEventTBL.MEDPAL = 1  and ClientEventTBL.CurrentStatus = '1')  )' - '1' : if_medhistDocScanlist.php
+2013-06-05 18:36:29 : 1 : Table 'clientinfodb.ScanDefinitionTBL' doesn't exist - Error doing mysql_query for big big join (195) sql = '	SELECT DISTINCT ScanID, EventScanInfo, EventScanTBL.ScanTypeID as Scan_TypeID, ClientEventID, ScanType, URL, ScanDefinition,
+				ProviderID, StartDate, FirstName, LastName, Suffix, Prefix
+				
+	from ClientEventTBL		
+		inner join EventScanTBL on ClientEventTBL.ID = EventScanTBL.ClientEventID
+		inner join ScanTypeTBL on EventScanTBL.ScanTypeID = ScanTypeTBL.ID
+		inner join ScanDefinitionTBL on EventScanTBL.ScanDefinitionkeyID = ScanDefinitionTBL.keyID
+		
+		inner join CalendarTBL on ClientEventTBL.CalendarID = CalendarTBL.ID
+		inner join ProviderTBL on ClientEventTBL.ProviderID = ProviderTBL.ID
+		inner join FullNameTBL on ProviderTBL.FullNameID = FullNameTBL.ID
+ 		inner join ScanInfoTBL on EventScanTBL.ScanID = ScanInfoTBL.ID
+			where ( (ClientEventTBL.MEDPAL = 1  and ClientEventTBL.CurrentStatus = '1')  AND (EventScanTBL.ScanTypeID = '4')  )' - '1' : if_medhistDocScanlist.php
+2013-06-05 18:36:37 : 1 : Table 'clientinfodb.ScanDefinitionTBL' doesn't exist - Error doing mysql_query for big big join (195) sql = '	SELECT DISTINCT ScanID, EventScanInfo, EventScanTBL.ScanTypeID as Scan_TypeID, ClientEventID, ScanType, URL, ScanDefinition,
+				ProviderID, StartDate, FirstName, LastName, Suffix, Prefix
+				
+	from ClientEventTBL		
+		inner join EventScanTBL on ClientEventTBL.ID = EventScanTBL.ClientEventID
+		inner join ScanTypeTBL on EventScanTBL.ScanTypeID = ScanTypeTBL.ID
+		inner join ScanDefinitionTBL on EventScanTBL.ScanDefinitionkeyID = ScanDefinitionTBL.keyID
+		
+		inner join CalendarTBL on ClientEventTBL.CalendarID = CalendarTBL.ID
+		inner join ProviderTBL on ClientEventTBL.ProviderID = ProviderTBL.ID
+		inner join FullNameTBL on ProviderTBL.FullNameID = FullNameTBL.ID
+ 		inner join ScanInfoTBL on EventScanTBL.ScanID = ScanInfoTBL.ID
+			where ( (ClientEventTBL.MEDPAL = 1  and ClientEventTBL.CurrentStatus = '1')  )' - '1' : if_medhistDocScanlist.php
